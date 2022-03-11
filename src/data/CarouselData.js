@@ -11,19 +11,19 @@ export const data = [
 		image: './assets/spiderman.jpg',
 	},
 	{
-		title: 'Our Team',
-		description: 'Our team consists of the best experts in the industry, learn about them',
-		image: './assets/teamwork.jpg',
+		title: 'Encanto',
+		description: '"Encanto" relata la historia de los Madrigal, una familia extraordinaria que vive en una casa mágica de un pueblo vibrante en las montañas de Colombia escondidas en un “Encanto”. ',
+		image: './assets/encanto.jpg',
 	},
 	{
-		title: 'Our servers',
-		description: 'Find more about hardware and software used for your service',
-		image: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?cs=srgb&dl=pexels-manuel-geissinger-325229.jpg&fm=jpg',
+		title: 'Euphoria',
+		description: 'Una reflexión sobre la adolescencia a través de un grupo de estudiantes de instituto que tienen que hacer frente a temas recurrentes de su edad, como la droga, el sexo y la violencia.',
+		image: './assets/euphoria.jpg',
 	},
 	{
-		title: 'Our top clients',
-		description: 'We have provided services to top clients in tech industry',
-		image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
+		title: 'La Matanza de Texas',
+		description: 'Melody (Sarah Yarkin), su hermana adolescente Lila (Elsie Fisher) y sus amigos Dante (Jacob Latimore) y Ruth (Nell Hudson) viajan al remoto pueblo de Harlow (Texas) para montar un negocio muy idealista.',
+		image: './assets/texas.jpg',
 	},
 ];
 

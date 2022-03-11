@@ -43,12 +43,12 @@ export const NavIcon = styled.img`
 	margin-right: 1rem;
 	position: relative;
 	top: 150%;
-	left: -35px;
-	width: 34%;
+	left: 35px;
+	width: 25%;
 	border-radius: 100%;
 
 	@media (min-width: 300px) and (max-width: 600px) {
-		margin-left: 90px;
+		margin-left: 70px;
 		top: 60%;
 		width: 39%;
 		height: 120px;

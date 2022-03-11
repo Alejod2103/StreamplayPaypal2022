@@ -46,7 +46,7 @@ function Pricing() {
 										))}
 									</PricingCardFeatures>
 									
-									<a style={{ textDecoration: "none"}} href={card.link}><Button>Pagar Ahora</Button></a> 							
+									<a style={{ textDecoration: "none", zIndex: 0}} href={card.link}><Button>Pagar Ahora</Button></a> 							
 								</PricingCardInfo>
 							</PricingCard>
 						))}

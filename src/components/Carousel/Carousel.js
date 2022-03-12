@@ -10,6 +10,7 @@ import {
 	CarouselImage,
 	CardButton,
 } from './CarouselStyles';
+import './Carrousel.css'
 
 const Carousel = () => {
 	const [sliderRef, setSliderRef] = useState(null);
@@ -38,7 +39,7 @@ const Carousel = () => {
 						<TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
 							{el.description}
 						</TextWrapper>
-						<CardButton>Ver en StreamPlay</CardButton>
+						<a className='reButton' href='https://jovial-franklin-94e8af.netlify.app'> <CardButton>Ver en StreamPlay</CardButton> </a>
 					</ImageWrapper>
 				))}
 			</ReviewSlider>

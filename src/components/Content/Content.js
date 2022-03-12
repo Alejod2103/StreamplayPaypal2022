@@ -69,6 +69,7 @@ export const Content = ({
 							>
 								{description}
 							</Subtitle>
+							<a href='https://jovial-franklin-94e8af.netlify.app'>
 							<ContentButton
 								initial={initial}
 								transition={{ delay: 1, duration: 0.6 }}
@@ -78,6 +79,7 @@ export const Content = ({
 							>
 								{buttonLabel}
 							</ContentButton>
+							</a>
 						</TextWrapper>
 					</ContentColumn>
 					<ContentColumn

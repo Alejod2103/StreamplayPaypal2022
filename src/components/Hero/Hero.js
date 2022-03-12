@@ -1,4 +1,5 @@
 import React from 'react';
+import './Hero.css'
 import { Link } from 'react-router-dom';
 import { Button, Container, MainHeading } from '../../globalStyles';
 import { HeroVideo, HeroSection, HeroSubText, HeroText, ButtonWrapper, HeroButton } from './HeroStyles';
@@ -16,7 +17,9 @@ const Hero = () => {
 					<Link to="pricing">
 						<Button>Ver Paquetes</Button>
 					</Link>
+					<a className='reButton' href='https://jovial-franklin-94e8af.netlify.app'>
 					<HeroButton>Ver Contenido</HeroButton>
+					</a>
 				</ButtonWrapper>
 			</Container>
 		</HeroSection>

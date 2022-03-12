@@ -21,7 +21,7 @@ export const heroTwo = {
 	},
 	headline: 'Stream Play Movies',
 	description: 'Todas las categorias disponibles: Comedia, Infantiles, Acción, Ciencia Ficción, Drama, Suspenso, Cine Latino y Mexicano, Películas de Estreno.',
-	buttonLabel: 'Comprar Ahora',
+	buttonLabel: 'Ver Catálogo',
 
 	linkTo: '/pricing',
 	imgStart: 'start',
@@ -38,7 +38,7 @@ export const heroThree = {
 	headline: 'Stream Play TV',
 	description:
 		'La mejor programacion en canales latinos y deportivos en exclusiva, La Liga, Serie A, BundesLiga, Ligue 1, Premier League, Liga MX etc',
-	buttonLabel: 'Comprar Ahora',
+	buttonLabel: 'Ver catálogo',
 
 	linkTo: '/pricing',
 	imgStart: 'true',

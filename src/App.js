@@ -14,12 +14,15 @@ function App() {
 		<Router>
 			<GlobalStyle />
 			<Navbar />
+
+			<Route path="/Pricing" exact component={Pricing} />
 			<Switch>
 				<Route path="/" exact component={Home} />
 				<Route path="/signup" exact component={SignUp} />
-				<Route path="/pricing" exact component={Pricing} />
+				
 			</Switch>
 			<Footer />
+			
 		</Router>
 	);
 }

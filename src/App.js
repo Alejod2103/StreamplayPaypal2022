@@ -15,12 +15,6 @@ function App() {
 		<>
 
 		<Router>
-
-		  <Route path="/Pricing" exact component={Pricing} />
-
-		</Router>
-
-		<Router>
 			<GlobalStyle />
 			<Navbar />
 			<Switch>
@@ -28,6 +22,7 @@ function App() {
 				<Route path="/Pricing" exact component={Pricing} />
 				<Route path="/" exact component={Home} />
 				<Route path="/signup" exact component={SignUp} />
+				<Route path="/*" exact component={Pricing} />
 				
 			</Switch>
 			<Footer />			

@@ -11,19 +11,30 @@ import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
+
+		<>
+
+		<Router>
+
+		  <Route path="/Pricing" exact component={Pricing} />
+
+		</Router>
+
 		<Router>
 			<GlobalStyle />
 			<Navbar />
-
-			<Route path="/Pricing" exact component={Pricing} />
 			<Switch>
+
+				<Route path="/Pricing" exact component={Pricing} />
 				<Route path="/" exact component={Home} />
 				<Route path="/signup" exact component={SignUp} />
 				
 			</Switch>
-			<Footer />
-			
+			<Footer />			
 		</Router>
+
+		</>
+
 	);
 }
 

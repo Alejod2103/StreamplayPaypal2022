@@ -3,6 +3,7 @@ import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 
+
 //Pages
 import Home from './pages/Home';
 import SignUp from './pages/SignupPage';
@@ -11,12 +12,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
-
 		<>
-		
-		<Router>
-		  <Route path="/Pricing" exact component={Pricing} />
-		</Router>
 
 		<Router>
 			<GlobalStyle />
@@ -31,7 +27,7 @@ function App() {
 			</Switch>
 			<Footer />			
 		</Router>
-
+		                                         
 		</>
 
 	);

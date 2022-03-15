@@ -25,7 +25,6 @@ const Navbar = () => {
 	const handleClick = () => {
 		setShow(!show);
 	};
-
 	const scrollTo = (id) => {
 		const element = document.getElementById(id);
 
@@ -47,7 +46,6 @@ const Navbar = () => {
 		<IconContext.Provider value={{ color: '#fff' }}>
 			<Nav>
 				<NavbarContainer>
-		
 					<NavLogo to='/' >
 						<NavIcon src="./assets/sptv.png" alt="logo" />
 					</NavLogo>

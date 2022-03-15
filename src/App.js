@@ -13,6 +13,10 @@ function App() {
 	return (
 
 		<>
+		
+		<Router>
+		  <Route path="/Pricing" exact component={Pricing} />
+		</Router>
 
 		<Router>
 			<GlobalStyle />

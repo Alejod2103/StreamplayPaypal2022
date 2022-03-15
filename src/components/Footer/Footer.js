@@ -12,6 +12,7 @@ import {
 	FooterColumn,
 	FooterGrid,
 } from './FooterStyles';
+import './Footer.css';
 import { footerData, footerSocialData } from '../../data/FooterData';
 import { Row, Section } from '../../globalStyles';
 
@@ -22,7 +23,7 @@ function Footer() {
 				<FooterGrid justify="space-between">
 					<FooterColumn id="footerLogo">
 						<FooterLogo to="/">
-							<SocialIcon src="./assets/logo.png" />
+							<SocialIcon className='icono' src="./assets/sptv.png" />
 							Stream Play
 						</FooterLogo>
 						<FooterAddress>

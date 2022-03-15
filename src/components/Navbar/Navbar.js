@@ -12,6 +12,7 @@ import {
 	NavLinks,
 	NavItem,
 } from './NavbarStyles.js';
+import './Navbar.css'
 import { useLocation, useHistory } from 'react-router-dom';
 import { data } from '../../data/NavbarData';
 
@@ -46,19 +47,22 @@ const Navbar = () => {
 		<IconContext.Provider value={{ color: '#fff' }}>
 			<Nav>
 				<NavbarContainer>
-					<NavLogo to="/">
+		
+					<NavLogo to='/' >
 						<NavIcon src="./assets/sptv.png" alt="logo" />
-						
 					</NavLogo>
+
 					<MobileIcon onClick={handleClick}>
 						{show ? <FaTimes /> : <CgMenuRight />}
 					</MobileIcon>
 					<NavMenu show={show}>
 						{data.map((el, index) => (
 							<NavItem key={index}>
+								<a className='reButton' href={el.link}>
 								<NavLinks onClick={() => closeMobileMenu(el.to, el.id)}>
 									{el.text}
 								</NavLinks>
+								</a>
 							</NavItem>
 						))}
 					</NavMenu>

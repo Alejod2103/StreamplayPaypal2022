@@ -13,6 +13,9 @@ import Footer from './components/Footer/Footer';
 function App() {
 	return (
 		<>
+		<Router>
+		 <Route path="/*" exact component={Pricing} />
+		</Router>
 
 		<Router>
 			<GlobalStyle />
@@ -27,7 +30,7 @@ function App() {
 			</Switch>
 			<Footer />			
 		</Router>
-		                                         
+
 		</>
 
 	);

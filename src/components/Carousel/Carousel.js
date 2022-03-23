@@ -39,7 +39,7 @@ const Carousel = () => {
 						<TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
 							{el.description}
 						</TextWrapper>
-						<a className='reButton' href='https://jovial-franklin-94e8af.netlify.app'> <CardButton>Ver en StreamPlay</CardButton> </a>
+ 							<CardButton to="/Pricing">Ver en StreamPlay</CardButton>
 					</ImageWrapper>
 				))}
 			</ReviewSlider>

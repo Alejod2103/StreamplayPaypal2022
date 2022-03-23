@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 
 //Pages
 import Home from './pages/Home';
+import Compatibles from './components/Compatibles/Compatible.js'
 import SignUp from './pages/SignupPage';
 import Pricing from './pages/PricingPage';
 import Footer from './components/Footer/Footer';
@@ -13,9 +14,7 @@ import Footer from './components/Footer/Footer';
 function App() {
 	return (
 		<>
-		<Router>
-		 <Route path="/*" exact component={Pricing} />
-		</Router>
+		
 
 		<Router>
 			<GlobalStyle />
@@ -25,6 +24,7 @@ function App() {
 				<Route path="/Pricing" exact component={Pricing} />
 				<Route path="/" exact component={Home} />
 				<Route path="/signup" exact component={SignUp} />
+				<Route path="/Compatibles" exact component={Compatibles} />
 				<Route path="/*" exact component={Pricing} />
 				
 			</Switch>

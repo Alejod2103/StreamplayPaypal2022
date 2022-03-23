@@ -28,7 +28,7 @@ const Features = () => {
 					<FeatureTitle>ELIGE STREAM PLAY</FeatureTitle>
 				</FeatureTextWrapper>
 				<FeatureWrapper>
-					{featuresData.map((el, index) => (
+					{featuresData.map((el, index) =>  (
 						<FeatureColumn
 							initial={initial}
 							animate={animate}
@@ -41,6 +41,9 @@ const Features = () => {
 							<FeatureName>{el.name}</FeatureName>
 							<FeatureText>{el.description}</FeatureText>
 						</FeatureColumn>
+
+
+
 					))}
 				</FeatureWrapper>
 			</Container>

@@ -17,6 +17,8 @@ import validateForm from './validateForm';
 const Form = () => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
+	const [user, setUser] = useState('');
+	const [telf, setTelf] = useState();
 	const [password, setPassword] = useState('');
 	const [confirmPass, setConfirmPass] = useState('');
 	const [error, setError] = useState(null);
@@ -32,6 +34,8 @@ const Form = () => {
 		}
 		setName('');
 		setEmail('');
+		setUser('');
+		setTelf();
 		setPassword('');
 		setConfirmPass('');
 		setError(null);
@@ -45,6 +49,8 @@ const Form = () => {
 
 	const formData = [
 		{ label: 'Nombre', value: name, onChange: (e) => setName(e.target.value), type: 'text' },
+		{ label: 'Usuario', value: user, onChange: (e) => setUser(e.target.value),type: 'usuario' },
+		{ label: 'Numero telefonico', value: telf, onChange: (e) => setTelf(e.target.value), type: 'usuario' },
 		{ label: 'Email', value: email, onChange: (e) => setEmail(e.target.value), type: 'email' },
 		{
 			label: 'Contraseña',

@@ -48,9 +48,10 @@ export const NavIcon = styled.img`
 	border-radius: 100%;
 
 	@media (min-width: 300px) and (max-width: 600px) {
-		margin-left: 57px;
+		left: 35%;
+		right: 50%;
 		top: 30px;
-		width: 39%;
+		width: 120px;
 		position: absolute;
 		height: 120px;
 	}
@@ -115,6 +116,7 @@ export const NavLinks = styled.span`
 	color: #fff;
 	display: flex;
 	align-items: center;
+	margin-top: 40px;
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	height: 100%;

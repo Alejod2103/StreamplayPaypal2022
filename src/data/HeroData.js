@@ -6,7 +6,6 @@ export const heroOne = {
 	},
 	headline: "Stream Play Series",
 	description: 'Disfruta de nuestro amplio catálogo con mas de +650 series en español e idioma original.',
-	buttonLabel: 'Ver Catálogo',
 	imgStart: 'start',
 	img: './assets/home.png',
 	start: 'true',
@@ -21,7 +20,6 @@ export const heroTwo = {
 	},
 	headline: 'Stream Play Movies',
 	description: 'Todas las categorias disponibles: Comedia, Infantiles, Acción, Ciencia Ficción, Drama, Suspenso, Cine Latino y Mexicano, Películas de Estreno.',
-	buttonLabel: 'Ver Catálogo',
 
 	linkTo: '/pricing',
 	imgStart: 'start',
@@ -38,7 +36,6 @@ export const heroThree = {
 	headline: 'Stream Play TV',
 	description:
 		'La mejor programacion en canales latinos y deportivos en exclusiva, La Liga, Serie A, BundesLiga, Ligue 1, Premier League, Liga MX etc',
-	buttonLabel: 'Ver catálogo',
 
 	linkTo: '/pricing',
 	imgStart: 'true',

@@ -23,11 +23,10 @@ export const HeroSubText = styled.p`
 	position: absolute;
 	top: 400px;
 
-	@media (min-width: 300px) and (max-width: 600px) {
-		top: 145px;
-		margin: 15px;
-		font-size: 11px;
-		font-weight: 600;
+	@media (min-width: 300px) and (max-width: 700px) {
+		top: 175px;
+		font-size: 10px;
+		font-weight: 700;
 		width: 80%;
 	}
 `

@@ -5,7 +5,6 @@ import {
 	TextWrapper,
 	TopLine,
 	Heading,
-	ContentButton,
 	Subtitle,
 	ImgWrapper,
 	Img,
@@ -69,17 +68,7 @@ export const Content = ({
 							>
 								{description}
 							</Subtitle>
-							<a href='https://jovial-franklin-94e8af.netlify.app'>
-							<ContentButton
-								initial={initial}
-								transition={{ delay: 1, duration: 0.6 }}
-								animate={animation}
-								inverse={inverse}
-								primary={primary}
-							>
-								{buttonLabel}
-							</ContentButton>
-							</a>
+
 						</TextWrapper>
 					</ContentColumn>
 					<ContentColumn

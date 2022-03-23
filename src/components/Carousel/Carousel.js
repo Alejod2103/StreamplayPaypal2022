@@ -10,6 +10,7 @@ import {
 	CarouselImage,
 	CardButton,
 } from './CarouselStyles';
+import { NavLink } from 'react-router-dom';
 import './Carrousel.css'
 
 const Carousel = () => {
@@ -39,7 +40,9 @@ const Carousel = () => {
 						<TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
 							{el.description}
 						</TextWrapper>
- 							<CardButton to="/Pricing">Ver en StreamPlay</CardButton>
+						  <NavLink to='/Pricing'>
+ 							<CardButton to='/Pricing'>Ver en StreamPlay</CardButton>
+						  </NavLink>
 					</ImageWrapper>
 				))}
 			</ReviewSlider>

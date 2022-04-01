@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react"
 import InputField from './Components/InputField.js'
 import SelectField from "./Components/SelectField.js";
-import TextareaField from "./Components/TextArea.js";
-import { ChevronRightIcon } from '@heroicons/react/solid'
 import emailjs from 'emailjs-com';
 import './Form.css'
 

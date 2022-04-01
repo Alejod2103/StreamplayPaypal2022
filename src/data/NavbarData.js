@@ -8,10 +8,6 @@ export const data = [
 		to: '/Pricing',
 		text: 'Paquetes',
 	},
-	{
-		to: '/signup',
-		text: 'Registro',
-	},
 	{/* 
 	{
 		text: 'Ver Catálogo',

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+.Back-White{
+  height: 800px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.Back-Blue{
+  position: relative;
+  flex-direction: reverse;
+  height: 500px;
+  width: 100%;
+  top: -25px;
+  background-color: #4287f5;
+}
+
+.BoxCont {
+  position: relative;
+  height: 580px;
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 60px 65px -5px rgba(1, 0, 0, 0.1);
+  border-radius: 25px;
+  top: 135px;
+  left: 650px;
+}
+
+.textOne{
+  position: relative;
+  margin: 20px;
+  left: 155px;
+  width: 200px;
+  top: 15px;
+  color: #000;
+  font: Roboto, sans;
+  font-weight: 600;
+  font-size: 25px;
+  border-bottom: 2px solid #000;
+}
+
+@media (min-width: 1024px) {
+  .ContOne {
+    margin-top: 48px;
+    margin-right: 48px;
+  }
+}
+
+.sendMsg {
+  color: gray;
+  margin-bottom: 7px;
+  font-size: 20px;
+  font: semibold;
+}
+
+.button {
+  margin-top: 4px;
+  background-color: gray;
+  color: #000;
+  border-radius: 25px;
+}

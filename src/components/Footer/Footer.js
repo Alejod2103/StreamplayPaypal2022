@@ -23,8 +23,8 @@ function Footer() {
 				<FooterGrid justify="space-between">
 					<FooterColumn id="footerLogo">
 						<FooterLogo to="/">
-							<SocialIcon className='icono' src="./assets/sptv.png" />
-							Stream Play
+							<SocialIcon className='icono' src="./assets/moontv.jpg" />
+							Moon TV
 						</FooterLogo>
 						<FooterAddress>
 							
@@ -54,7 +54,7 @@ function Footer() {
 						</FooterLinkItems>
 					))}
 				</FooterGrid>
-				<FooterRights>Stream Play TV © 2022</FooterRights>
+				<FooterRights>Moon TV © 2022</FooterRights>
 			</FooterWrapper>
 		</Section>
 	);

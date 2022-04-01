@@ -19,7 +19,7 @@ const Compatible = () => {
         <div className="container download" data-aos="fade-up">
             <CompatibleTitulo> Compatible en todas las plataformas </CompatibleTitulo>
         </div>
-        <CompatibleSubTitulo>Disfruta de todo el contenido que Stream Play tiene para ti desde todos tus dispositivos</CompatibleSubTitulo>
+        <CompatibleSubTitulo>Disfruta de todo el contenido que Moon Tv tiene para ti desde todos tus dispositivos</CompatibleSubTitulo>
 
         <IconContext.Provider value={{ size: "15" }}>
             <CompatibleIconCont>

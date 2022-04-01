@@ -47,7 +47,7 @@ const Navbar = () => {
 			<Nav>
 				<NavbarContainer>
 					<NavLogo to='/' >
-						<NavIcon src="./assets/sptv.png" alt="logo" />
+						<NavIcon src="./assets/moontv.jpg" alt="logo" />
 					</NavLogo>
 
 					<MobileIcon onClick={handleClick}>

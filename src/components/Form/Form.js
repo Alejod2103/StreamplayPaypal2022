@@ -1,115 +1,82 @@
-import React, { useState } from 'react';
-import {
-	FormColumn,
-	FormWrapper,
-	FormInput,
-	FormSection,
-	FormRow,
-	FormLabel,
-	FormInputRow,
-	FormMessage,
-	FormButton,
-	FormTitle,
-} from './FormStyles';
-import { Container } from '../../globalStyles';
-import validateForm from './validateForm';
+import { useEffect, useState } from "react"
+import InputField from './Components/InputField.js'
+import SelectField from "./Components/SelectField.js";
+import TextareaField from "./Components/TextArea.js";
+import { ChevronRightIcon } from '@heroicons/react/solid'
+import emailjs from 'emailjs-com';
+import './Form.css'
 
-const Form = () => {
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
-	const [user, setUser] = useState('');
-	const [telf, setTelf] = useState();
-	const [password, setPassword] = useState('');
-	const [confirmPass, setConfirmPass] = useState('');
-	const [error, setError] = useState(null);
-	const [success, setSuccess] = useState(null);
+const ContactForm = () => {
+  const [values, setValues] = useState({
+    fullName: '',
+    email: '',
+    telf: '',
+    message: '',
+    user: '',
+    role: '',
+    password: '',
+    repassword: '',
+  });
+  const [status, setStatus] = useState('');
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		const resultError = validateForm({ name, email, password, confirmPass });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.send('service_ae51j99', 'template_jhj635y', values, 'user_Yuqa0U8GSg0rBG8ka2thS')
+      .then(response => {
+        console.log('SUCCESS!', response);
+        setValues({
+          fullName: '',
+          email: '',
+          telf: '',
+          message: '',
+          user: '',
+          password: '',
+          repassword: '',
+        });
+        setStatus('SUCCESS');
+      }, error => {
+        console.log('FAILED...', error);
+      });
+  }
 
-		if (resultError !== null) {
-			setError(resultError);
-			return;
-		}
-		setName('');
-		setEmail('');
-		setUser('');
-		setTelf();
-		setPassword('');
-		setConfirmPass('');
-		setError(null);
-		setSuccess('Su usuario a sido Creado, Favor verificar su correo Electronico!');
-	};
+  useEffect(() => {
+    if(status === 'SUCCESS') {
+      setTimeout(() => {
+        setStatus('');
+      }, 3000);
+    }
+  }, [status]);
 
-	const messageVariants = {
-		hidden: { y: 30, opacity: 0 },
-		animate: { y: 0, opacity: 1, transition: { delay: 0.2, duration: 0.4 } },
-	};
+  const handleChange = (e) => {
+    setValues(values => ({
+      ...values,
+      [e.target.name]: e.target.value
+    }))
+  }
+  return (
+    <div className="Back-White">
+    <div className="Back-Blue">
+      <div className="BoxCont">
+        <h1 className="textOne">Crea tu usuario</h1>
+          <InputField value={values.fullName} handleChange={handleChange} label="Nombre" name="fullName" type="text" placeholder="John Doe" />
+          <InputField value={values.email} handleChange={handleChange} label="E-Mail" name="email" type="email" placeholder="jphn@example.com" />
+          <InputField value={values.telf} handleChange={handleChange} label="Telefono" name="telf" type="text" placeholder="jphn@example.com" />
+          <InputField value={values.user} handleChange={handleChange} label="Usuario" name="user" type="text" placeholder="jphn@example.com" />
+          <InputField value={values.password} handleChange={handleChange} label="Contraseña" name="password" type="password" placeholder="jphn@example.com" />
+          <InputField value={values.repassword} handleChange={handleChange} label="Repetir Contraseña" name="repassword" type="password" placeholder="jphn@example.com" />
+          <SelectField handleChange={handleChange} name="role" label="Paquete" />
+      </div>
+    </div>
+    </div>
 
-	const formData = [
-		{ label: 'Nombre', value: name, onChange: (e) => setName(e.target.value), type: 'text' },
-		{ label: 'Usuario', value: user, onChange: (e) => setUser(e.target.value),type: 'usuario' },
-		{ label: 'Numero telefonico', value: telf, onChange: (e) => setTelf(e.target.value), type: 'usuario' },
-		{ label: 'Email', value: email, onChange: (e) => setEmail(e.target.value), type: 'email' },
-		{
-			label: 'Contraseña',
-			value: password,
-			onChange: (e) => setPassword(e.target.value),
-			type: 'password',
-		},
-		{
-			label: 'Contraseña nuevamente',
-			value: confirmPass,
-			onChange: (e) => setConfirmPass(e.target.value),
-			type: 'password',
-		},
-	];
-	return (
-		<FormSection>
-			<Container>
-				<FormRow>
-					<FormColumn small>
-						<FormTitle>Registrar Usuario</FormTitle>
-						<FormWrapper onSubmit={handleSubmit}>
-							{formData.map((el, index) => (
-								<FormInputRow key={index}>
-									<FormLabel>{el.label}</FormLabel>
-									<FormInput
-										type={el.type}
-										placeholder={`Ingrese su ${el.label.toLocaleLowerCase()}`}
-										value={el.value}
-										onChange={el.onChange}
-									/>
-								</FormInputRow>
-							))}
 
-							<FormButton type="submit">Registrarse</FormButton>
-						</FormWrapper>
-						{error && (
-							<FormMessage
-								variants={messageVariants}
-								initial="hidden"
-								animate="animate"
-								error
-							>
-								{error}
-							</FormMessage>
-						)}
-						{success && (
-							<FormMessage
-								variants={messageVariants}
-								initial="hidden"
-								animate="animate"
-							>
-								{success}
-							</FormMessage>
-						)}
-					</FormColumn>
-				</FormRow>
-			</Container>
-		</FormSection>
-	);
-};
+  )
+}
 
-export default Form;
+const renderAlert = () => (
+  <div className="px-4 py-3 leading-normal text-blue-700 bg-blue-100 rounded mb-5 text-center">
+    <p>your message submitted successfully</p>
+  </div>
+)
+
+export default ContactForm

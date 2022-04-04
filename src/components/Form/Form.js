@@ -3,7 +3,7 @@ import InputField from './Components/InputField.js'
 import SelectField from "./Components/SelectField.js";
 import CheckboxField from "./Components/CheckboxField.js"
 import emailjs from 'emailjs-com';
-import { ButtonStyled, TextLeft, TextLeftTwo } from './FormStyles.js'
+import { ButtonStyled, TextLeft, TextLeftTwo, TextOne } from './FormStyles.js'
 import './Form.css'
 
 const ContactForm = () => {
@@ -59,12 +59,12 @@ const ContactForm = () => {
     <div className="Back-White">
       {status && renderAlert()}
     
-    <div className="Back-Blue">
+    <div className="Back-Blue"> 
     <TextLeft>Vamos a Crear tu Usuario</TextLeft>
     <TextLeftTwo>Ingresa tu información</TextLeftTwo>
       <div className="BoxCont">
       <form className="form" onsubmit={handleSubmit}>
-        <h1 className="textOne">Crea tu usuario</h1>
+        <TextOne>Vamos a crear tu usuario</TextOne>
           <InputField value={values.fullName} handleChange={handleChange} label="Nombre" name="fullName" type="text" placeholder="John Doe" />
           <InputField value={values.email} handleChange={handleChange} label="E-Mail" name="email" type="email" placeholder="jphn@example.com" />
           <InputField value={values.telf} handleChange={handleChange} label="Telefono" name="telf" type="text" placeholder="jphn@example.com" />

@@ -47,10 +47,10 @@ export const NavIcon = styled.img`
 	width: 25%;
 	border-radius: 100%;
 
-	@media (min-width: 300px) and (max-width: 600px) {
+	@media (min-width: 300px) and (max-width: 900px) {
 		left: 35%;
 		right: 50%;
-		top: 30px;
+		top: 10px;
 		width: 120px;
 		position: absolute;
 		height: 120px;

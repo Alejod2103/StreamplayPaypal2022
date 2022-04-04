@@ -21,12 +21,24 @@
 .BoxCont {
   position: relative;
   height: 580px;
-  width: 570px;
+  width: 550px;
   background-color: #fff;
   box-shadow: 0 60px 65px -5px rgba(1, 0, 0, 0.1);
   border-radius: 25px;
   top: 135px;
   left: 750px;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .BoxCont{
+    left: 15px;
+    width: 90%;
+    position: relative;
+    top: 300px;
+  }
+  .Back-White{
+    height: 900px;
+  }
 }
 
 .textOne{

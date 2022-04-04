@@ -21,25 +21,26 @@
 .BoxCont {
   position: relative;
   height: 580px;
-  width: 600px;
+  width: 570px;
   background-color: #fff;
   box-shadow: 0 60px 65px -5px rgba(1, 0, 0, 0.1);
   border-radius: 25px;
   top: 135px;
-  left: 650px;
+  left: 750px;
 }
 
 .textOne{
   position: relative;
   margin: 20px;
-  left: 155px;
-  width: 200px;
+  left: 135px;
+  width: 250px;
   top: 15px;
-  color: #000;
+  color: #4287f5;
   font: Roboto, sans;
-  font-weight: 600;
+  font-weight: 800;
+  text-transform: uppercase;
   font-size: 25px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #4287f5;
 }
 
 @media (min-width: 1024px) {

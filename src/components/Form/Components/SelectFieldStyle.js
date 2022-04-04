@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 export const SelectCont = styled.div`
     width: 70%;
-    top: 10px;
     height: 80px;
     position: relative;
-    margin-top: 15px;
-    margin-left: 190px;    
+    margin-top: 25px;
+    margin-left: 270px;    
 `;
 
 export const LabelStyled = styled.label`
@@ -16,4 +15,11 @@ export const LabelStyled = styled.label`
     bottom: 5px;
     font: montserrat;
     border-bottom: 2px solid #000;
+`;
+
+export const SelectStyled = styled.select`
+    background-color: #000;
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
 `;

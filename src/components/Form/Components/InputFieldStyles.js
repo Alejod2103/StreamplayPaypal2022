@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const InputCont = styled.div`
     position: relative;
-    top: 10px;
+    top: 2px;
     margin-bottom: 12px;
-    margin-top: 12px;
+    margin-top: 8px;
     margin-left: 25px;
 `;
 
@@ -17,7 +17,7 @@ export const LabelStyled = styled.label`
 export const InputFormStyled = styled.input`
     margin-top: 2px;
     width: 500px;
-    height: 30px;
+    height: 25px;
     border-radius: 40px;
     border: 2px solid #000;
     outline: none;

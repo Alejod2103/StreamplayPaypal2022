@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Compatibles from './components/Compatibles/Compatible.js'
 import SignUp from './pages/SignupPage';
 import Pricing from './pages/PricingPage';
+import CatalogoPage from './pages/CatalogoPage.js';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -24,8 +25,8 @@ function App() {
 				<Route path="/Pricing" exact component={Pricing} />
 				<Route path="/" exact component={Home} />
 				<Route path="/signup" exact component={SignUp} />
+				<Route path="/Catalogo" exact component={CatalogoPage} />
 				<Route path="/Compatibles" exact component={Compatibles} />
-				<Route path="/*" exact component={Pricing} />
 				
 			</Switch>
 			<Footer />			

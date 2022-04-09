@@ -22,6 +22,7 @@ function App() {
 			<Navbar />
 			<Switch>
 
+
 				<Route path="/Pricing" exact component={Pricing} />
 				<Route path="/" exact component={Home} />
 				<Route path="/signup" exact component={SignUp} />

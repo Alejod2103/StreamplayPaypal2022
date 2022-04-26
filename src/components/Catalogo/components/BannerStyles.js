@@ -29,7 +29,7 @@ export const BannerTitulo = styled.h1`
     @media (min-width: 300px) and (max-width: 400px) {
         margin-top: 210px;
         margin-left: -20px;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 `;
 

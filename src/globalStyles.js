@@ -45,6 +45,10 @@ export const Heading = styled.h2`
 	line-height: 1.06;
 	text-align: center;
 	width: ${({ width }) => (width ? width : '100%')};
+
+	@media (min-width: 300px) and (max-width:400px) {
+		font-size: 29px;
+	}
 `;
 export const TextWrapper = styled.span`
 	color: ${({ color }) => (color ? color : '')};

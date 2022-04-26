@@ -20,7 +20,7 @@ const Carousels = () => {
 		<>
 		<Section className="alejo" margin="auto"  padding="15px 15px" inverse>
 			<Row justify="space-between" margin="1rem" wrap="wrap">
-				<Heading style={{textShadow: "4px 4px #fff",}} width="auto" inverse>
+				<Heading style={{textShadow: "4px 4px #fff",}} inverse>
 					Populares en StreamPlay
 				</Heading>
 				<ButtonContainer>

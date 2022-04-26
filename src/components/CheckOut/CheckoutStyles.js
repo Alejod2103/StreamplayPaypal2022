@@ -234,11 +234,10 @@ export const CheckoutPaypalCont = styled.div`
     position: relative;
     top: 36px;
     color: #fff;
+    margin-left: 0.5%;
     margin-top: 100px;
-    margin-left: 2px;
-    margin-right: 2px;
     justify-items: center;
-    width: 100%;
+    width: 99%;
 
     @media (min-width: 300px) and (max-width: 1200px){
         margin-left: 4.9%;

@@ -23,8 +23,8 @@ function Footer() {
 				<FooterGrid justify="space-between">
 					<FooterColumn id="footerLogo">
 						<FooterLogo to="/">
-							<SocialIcon className='icono' src="./assets/moontv.jpg" />
-							Moon TV
+							<SocialIcon className='icono' src="./assets/sptv.png" />
+							StreamPlay
 						</FooterLogo>
 						<FooterAddress>
 							

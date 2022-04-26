@@ -10,7 +10,7 @@ import SignUp from './pages/SignupPage';
 import Pricing from './pages/PricingPage';
 import CatalogoPage from './pages/CatalogoPage.js';
 import Footer from './components/Footer/Footer';
-import { CheckoutPage } from './pages/Checkout';
+import { CheckoutPage, CheckoutPagePlus, CheckoutPageUltra } from './pages/Checkout';
 
 function App() {
 	return (
@@ -25,6 +25,8 @@ function App() {
 				<Route path="/Pricing" exact component={Pricing} />
 				<Route path="/" exact component={Home} />
 				<Route path="/signup" exact component={SignUp} />
+				<Route path="/CheckoutUltra" exact component={CheckoutPageUltra} />
+				<Route path="/CheckoutPlus" exact component={CheckoutPagePlus} />
 				<Route path="/Checkout" exact component={CheckoutPage} />
 				<Route path="/Catalogo" exact component={CatalogoPage} />
 				<Route path="/Compatibles" exact component={Compatibles} />

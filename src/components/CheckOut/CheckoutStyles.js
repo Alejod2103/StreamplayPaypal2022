@@ -32,9 +32,26 @@ export const CheckoutContainer = styled.div`
         margin-top: 300px;
         left: 0;
     }
-    @media (min-width: 550px) and (max-width: 720px){
-        margin-left: 4%;
+    @media (min-width: 550px) and (max-width: 600px){
+        margin-left: 9%;
         width: 100%;
+        margin-top: 300px;
+        left: 0%;
+
+    }
+    @media (min-width: 600px) and (max-width: 750px){
+        margin-left: 19%;
+        margin-right: 12%;
+        width: 100%;
+        margin-top: 300px;
+        left: 0%;
+
+    }
+    @media (min-width: 750px) and (max-width: 950px){
+        margin-left: 25%;
+        margin-right: 12%;
+        width: 100%;
+        margin-top: 300px;
         left: 0%;
 
     }
@@ -93,29 +110,25 @@ export const ProductImage = styled.img`
         margin-left: 35%;
         top: 180px;
     }
-`;
 
-
-export const InputField = styled.input`
-    width: 360px;
-    position: absolute;
-    z-index: 1;
-    margin-left: 5%;
-    margin-top: 12px;
-    border-radius: 7px;
-    background-color: #eeeeee;
-    outline: 0.1px solid #000;
-    height: 32px;
-    @media (min-width: 300px) and (max-width:400px) {
-        
+    @media (min-width: 540px) and (max-width: 940px){
+        margin-left: 40%;
+        top: 185px;
     }
-    @media (min-width: 400px) and (max-width:1000){
-        
-    }
-    @media (min-width: 1000px) and (max-width: full){
 
+        @media (min-width: 540px) and (max-width: 940px){
+        margin-left: 40%;
+        top: 185px;
+    }
+
+    @media (min-width: 970px) and (max-width: 1200px){
+        margin-left: 48%;
+        top: 110px;
+        width: 160px;
+        height: 150px;
     }
 `;
+
 
 export const Inputtext = styled.h2`
     font-size: 13px;
@@ -133,6 +146,10 @@ export const InfoContainer = styled.div`
     width: 100%; 
     height: 100px;
     top: 120px;
+
+    @media (min-width: 380px) and (max-width: 900px){
+        font-size: 13px;
+    }
 `;
 
 export const PaqueteText = styled.h2`
@@ -165,6 +182,11 @@ export const PaqueteText = styled.h2`
         margin-left: 8%;
         font-size: 19px;
     }
+
+    @media (min-width: 600px) and (max-width: 950px){
+        margin-left: 11%;
+        font-size: 22px;
+    }
 `;
 
 export const PriceCheckout = styled.h2`
@@ -185,10 +207,26 @@ export const DescCheckout = styled.h2`
     text-shadow: 2px 1px 2px #000;
     margin-left: 12%;
     @media (min-width: 300px) and (max-width: 400px){
-        margin-left: 6%;
-        font-size: 11px;
+        margin-left: 3%;
+        font-size: 9.5px;
         top: 20px;
-        letter-spacing: 1.5px;
+        letter-spacing: 0.5px;
+    }
+
+    @media (min-width: 400px) and (max-width: 900px){
+        margin-left: 7%;
+        font-size: 11px;
+        width: 80%;
+        top: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    @media (min-width: 400px) and (max-width: 900px){
+        margin-left: 9.5%;
+        font-size: 14px;
+        width: 90%;
+        top: 20px;
+        letter-spacing: 0.5px;
     }
 `;
 

@@ -18,7 +18,7 @@ export const pricingData = [
 			'3 Dispositivos en Simultaneo',
 			'+600 Series en español',
 		],
-		link: '/Checkout',
+		link: '/CheckoutPlus',
 	},
 	{
 		title: 'PLAN ULTRA 6 MESES',
@@ -32,7 +32,7 @@ export const pricingData = [
 			'3 Dispositivos en Simultaneo',
 			'+600 Series en español',
 		],
-		link: '/Checkout'
+		link: '/CheckoutUltra'
 	},
 
 

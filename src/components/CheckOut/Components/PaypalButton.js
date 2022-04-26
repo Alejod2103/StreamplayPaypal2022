@@ -22,7 +22,7 @@ function PaypalButton() {
                 onApprove={(data, actions) => {
                   return actions.order.capture().then((details) => {
                       const name = details.payer.name.given_name;
-                      alert(`Feklicidades ${name} tu pago se a procesado`);
+                      alert(`Felicidades ${name} tu pago se a procesado`);
                       console.log(name);
                       
                   });

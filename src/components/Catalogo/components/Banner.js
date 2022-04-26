@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import { BannerContent,
          BannerTitulo,
          BannerContBoton,
@@ -20,8 +21,12 @@ function Banner() {
             <BannerContent>
                 <BannerTitulo>Eternals</BannerTitulo>
               <BannerContBoton>
-                  <BannerBoton>Ver en la App</BannerBoton>
+                 <NavLink to='/'>
+                  <BannerBoton>Home</BannerBoton>
+                  </NavLink>
+                  <NavLink to='/Pricing'>
                   <BannerBoton>Ver Planes</BannerBoton>
+                  </NavLink>
               </BannerContBoton>
               <BannerDesc>
                 {truncate(

@@ -29,11 +29,16 @@ export const BannerTitulo = styled.h1`
     @media (min-width: 300px) and (max-width: 400px) {
         margin-top: 210px;
         margin-left: -20px;
+        font-size: 4rem;
     }
 `;
 
 export const BannerContBoton = styled.div`
     margin-top: 40px;
+    @media (min-width: 300px) and (max-width: 700px){
+        margin-top: 20px;
+        margin-left: 10px;
+    }
 `;
 
 export const BannerBoton = styled.button`
@@ -41,6 +46,8 @@ export const BannerBoton = styled.button`
     color: #fff;
     outline: none;
     border: none;
+    justify-content: center;
+
     font-size: 1rem;
     font-weight: 800;
     border-radius: 0.4vw;
@@ -58,7 +65,7 @@ export const BannerBoton = styled.button`
     }
 
     @media (min-width: 300px) and (max-width:400px) {
-        padding-left: 1rem;
+        padding-left: 1.5rem;
         border-radius: 3.5px;
     }
 `;
@@ -76,12 +83,20 @@ export const BannerDesc = styled.h1`
     height: 80px;
     margin-left: 13px;
 
-    @media (min-width: 300px) and (max-width: 700px) {
+    @media (min-width: 450px) and (max-width: 700px) {
         max-width: 800px;
         width: 310px;
         letter-spacing: none;
         font-size: 1rem;
         padding-top: 4.5rem;
+    }
+
+    @media (min-width: 300px) and (max-width: 450px){
+        max-width: 350px;
+        width: 300px;
+        margin-top: 10px;
+        margin-left: -5px;
+        font-size: 14px;        
     }
 `;
 

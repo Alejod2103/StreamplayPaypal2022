@@ -1,7 +1,7 @@
 export const data = [
 	{
 		to: '/',
-		text: 'Sobre Nosotros',
+		text: 'Sobre nosotros',
 		id: 'about',
 	},
 	{
@@ -9,11 +9,7 @@ export const data = [
 		text: 'Paquetes',
 	},
 	{
-		to: '/signup',
-		text: 'Registro',
-	},
-	{
-		text: 'Ver Catálogo',
+		text: 'Ver catálogo',
 		link: '/Catalogo'
 	},
 	

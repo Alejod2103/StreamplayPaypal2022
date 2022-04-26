@@ -45,7 +45,6 @@ const Compatible = () => {
                 </a>
             </CompatibleIconCont>
         </IconContext.Provider>
-
     </CompatibleContainer>
   );
 };

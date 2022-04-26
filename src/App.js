@@ -3,7 +3,6 @@ import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 
-
 //Pages
 import Home from './pages/Home';
 import Compatibles from './components/Compatibles/Compatible.js'
@@ -11,6 +10,7 @@ import SignUp from './pages/SignupPage';
 import Pricing from './pages/PricingPage';
 import CatalogoPage from './pages/CatalogoPage.js';
 import Footer from './components/Footer/Footer';
+import { CheckoutPage } from './pages/Checkout';
 
 function App() {
 	return (
@@ -22,10 +22,10 @@ function App() {
 			<Navbar />
 			<Switch>
 
-
 				<Route path="/Pricing" exact component={Pricing} />
 				<Route path="/" exact component={Home} />
 				<Route path="/signup" exact component={SignUp} />
+				<Route path="/Checkout" exact component={CheckoutPage} />
 				<Route path="/Catalogo" exact component={CatalogoPage} />
 				<Route path="/Compatibles" exact component={Compatibles} />
 				

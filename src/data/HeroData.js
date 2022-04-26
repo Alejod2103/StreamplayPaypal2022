@@ -4,12 +4,13 @@ export const heroOne = {
 	topLine: {
 		text: 'Mayor beneficio por el mejor precio',
 	},
-	headline: "Moon Tv Series",
+	headline: "Stream Play Tv Series",
 	description: 'Disfruta de nuestro amplio catálogo con mas de +650 series en español e idioma original.',
 	imgStart: 'start',
 	img: './assets/home.png',
+	buttonLabel: 'Ver Catalogo' ,
 	start: 'true',
-	linkTo: '/pricing',
+	linkTo: '/Catalogo',
 };
 
 export const heroTwo = {
@@ -18,12 +19,13 @@ export const heroTwo = {
 	topLine: {
 		text: 'Más de +5000 peliculas incluidas en tu suscripción.',
 	},
-	headline: 'Moon Tv Movies',
+	headline: 'Stream Play Movies',
 	description: 'Todas las categorias disponibles: Comedia, Infantiles, Acción, Ciencia Ficción, Drama, Suspenso, Cine Latino y Mexicano, Películas de Estreno.',
 
-	linkTo: '/pricing',
+	linkTo: '/Pricing',
 	imgStart: 'start',
 	img: './assets/movie.png',
+	buttonLabel: 'Ver Precios' ,
 	start: 'true',
 };
 
@@ -33,11 +35,12 @@ export const heroThree = {
 	topLine: {
 		text: 'Más de +1000 canales en español.',
 	},
-	headline: 'Moon TV',
+	headline: 'Stream Play TV',
+	buttonLabel: 'Ver Catalogo' ,
 	description:
 		'La mejor programacion en canales latinos y deportivos en exclusiva, La Liga, Serie A, BundesLiga, Ligue 1, Premier League, Liga MX etc',
 
-	linkTo: '/pricing',
+	linkTo: '/Catalogo',
 	imgStart: 'true',
 	img: './assets/watching-tv.png',
 	start: 'true',

@@ -22,7 +22,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send('service_xd9mtfr', 'template_1z7fite', values, 'nPCuWIe53tZRvDWo5')
+    emailjs.send('service_e0dt0ok', 'template_1z7fite', values, 'nPCuWIe53tZRvDWo5')
       .then(response => {
         console.log('SUCCESS!', response);
         setValues({

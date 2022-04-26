@@ -26,8 +26,9 @@ export const PricingContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-flow: wrap;
+	width: 100%;
 	> div {
-		margin: 0.7rem;
+		margin: 1.2rem;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -83,11 +84,14 @@ export const PricingCardInfo = styled.div`
 
 export const PricingCardPlan = styled.h3`
 	margin-bottom: 5px;
-	font-size: 2rem;
+	letter-spacing: none;
+	color: #fff;
+	font-size: 1.5rem;
 `;
 
 export const PricingCardCost = styled.h4`
 	font-size: 1.2rem;
+	color: #fff;
 `;
 
 export const PricingCardText = styled.p`

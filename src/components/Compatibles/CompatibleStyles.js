@@ -8,6 +8,9 @@ export const CompatibleContainer = styled.div`
   );
   text-align: center;
   color: #fff;
+  top: -25px;
+  position: relative;
+  height: 300px;
 `
 
 export const CompatibleTitulo = styled.h1`
@@ -38,7 +41,7 @@ export const CompatibleIconCont = styled.div`
 `;
 
 export const CompatibleIcon = styled.div`
-    margin: 1rem 2rem;
+    margin: 10px;
     border: 2px solid #fff;
     border-radius: 5px;
     width: 12rem;

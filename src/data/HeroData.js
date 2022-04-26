@@ -10,7 +10,7 @@ export const heroOne = {
 	img: './assets/home.png',
 	buttonLabel: 'Ver Catalogo' ,
 	start: 'true',
-	linkTo: '/Catalogo',
+	LinkTo: '/Catalogo',
 };
 
 export const heroTwo = {
@@ -22,7 +22,7 @@ export const heroTwo = {
 	headline: 'Stream Play Movies',
 	description: 'Todas las categorias disponibles: Comedia, Infantiles, Acción, Ciencia Ficción, Drama, Suspenso, Cine Latino y Mexicano, Películas de Estreno.',
 
-	linkTo: '/Pricing',
+	LinkTo: '/Pricing',
 	imgStart: 'start',
 	img: './assets/movie.png',
 	buttonLabel: 'Ver Precios' ,
@@ -39,8 +39,7 @@ export const heroThree = {
 	buttonLabel: 'Ver Catalogo' ,
 	description:
 		'La mejor programacion en canales latinos y deportivos en exclusiva, La Liga, Serie A, BundesLiga, Ligue 1, Premier League, Liga MX etc',
-
-	linkTo: '/Catalogo',
+	LinkTo: '/Catalogo',
 	imgStart: 'true',
 	img: './assets/watching-tv.png',
 	start: 'true',

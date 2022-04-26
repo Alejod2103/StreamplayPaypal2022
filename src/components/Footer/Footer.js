@@ -54,7 +54,7 @@ function Footer() {
 						</FooterLinkItems>
 					))}
 				</FooterGrid>
-				<FooterRights>Moon TV © 2022</FooterRights>
+				<FooterRights>StreamPlay Tv © 2022</FooterRights>
 			</FooterWrapper>
 		</Section>
 	);

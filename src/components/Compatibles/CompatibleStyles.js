@@ -9,6 +9,8 @@ export const CompatibleContainer = styled.div`
   text-align: center;
   color: #fff;
   top: -25px;
+  z-index: 1;
+  margin-bottom: -30px;
   position: relative;
   height: 300px;
 `
@@ -16,6 +18,7 @@ export const CompatibleContainer = styled.div`
 export const CompatibleTitulo = styled.h1`
     font-size: 2.5rem;
     font-weight: 200;
+    color: #fff;
     line-height: 1.4;
     text-transform: uppercase;
     margin: 1.5rem 0;

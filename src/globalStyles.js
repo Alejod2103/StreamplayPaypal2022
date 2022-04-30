@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import  bg  from './back.png' 
  
 const GlobalStyle = createGlobalStyle`
   *{
@@ -21,17 +22,85 @@ export const Container = styled.div`
 	}
 `;
 export const MainHeading = styled.h1`
-	font-size: clamp(2.3rem, 6vw, 4.5rem);
-	margin-bottom: 2rem;
-	color: ${({ inverse }) => (inverse ? '$403ae3' : '#fff')};
-	width: 100%;
-	letter-spacing: 4px;
-	text-align: center;
-	@media (min-width: 300px) and (max-width: 600px) {
-		position: absolute;
-		top: 51px;
-		display: none;
+	font-size: 100px;
+	position: relative;
+	margin-left: 225px;
+	line-height: 160px;
+	margin-top: 30px;
+	color: transparent;
+	-webkit-text-stroke: 3px #fff;
+	background: url(${bg});
+	-webkit-background-clip: text;
+	background-position: 0 0;
+	animation: back 20s linear infinite;
+
+	@keyframes back{
+		100%{
+			background-position: 2000px 0;
+		}
+	}
+
+	@media (min-width: 300px) and (max-width: 450px) {
+		position: relative;
+		top: 1px;
+		font-size: 40px;
+		line-height: 45px;
+		margin-left: 10%;
 		width: 80%;
+	}
+
+	
+	@media (min-width: 450px) and (max-width: 500px) {
+		position: relative;
+		top: 1px;
+		font-size: 50px;
+		line-height: 45px;
+		margin-left: 7%;
+		width: 100%;
+	}
+
+	@media (min-width: 500px) and (max-width: 600px) {
+		position: relative;
+		top: 1px;
+		font-size: 50px;
+		line-height: 45px;
+		margin-left: 14%;
+		width: 100%;
+	}
+
+	@media (min-width: 600px) and (max-width: 700px) {
+		position: relative;
+		top: 1px;
+		font-size: 50px;
+		line-height: 45px;
+		margin-left: 20%;
+		width: 100%;
+	}
+
+	
+	@media (min-width: 700px) and (max-width: 800px) {
+		position: relative;
+		top: 1px;
+		font-size: 50px;
+		line-height: 45px;
+		margin-left: 24%;
+		width: 100%;
+	}
+	@media (min-width: 800px) and (max-width: 900px) {
+		position: relative;
+		top: 1px;
+		font-size: 50px;
+		line-height: 45px;
+		margin-left: 28%;
+		width: 100%;
+	}
+	@media (min-width: 900px) and (max-width: 1200px) {
+		position: relative;
+		top: 1px;
+		font-size: 50px;
+		line-height: 45px;
+		margin-left: 30%;
+		width: 100%;
 	}
 `;
 
@@ -119,7 +188,7 @@ export const Button = styled.button`
 	font-size: 16px;
 	color: #fff;
 	outline: none;
-	border: 2px solid #fff;
+	border: 2px solid #2547a8;
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;

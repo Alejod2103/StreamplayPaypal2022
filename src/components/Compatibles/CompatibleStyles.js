@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const CompatibleContainer = styled.div`
   background: linear-gradient(
     90deg,
-    rgba(45, 165, 255, 1) 45%,
+    rgba(45, 165, 255, 1) 4 5%,
     rgba(1, 223, 245, 1) 100%
   );
   text-align: center;

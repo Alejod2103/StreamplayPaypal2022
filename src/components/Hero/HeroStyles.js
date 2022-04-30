@@ -20,27 +20,31 @@ export const HeroVideo = styled.img`
 `;
 
 export const HeroSubText = styled.p`
-	position: absolute;
-	top: 400px;
+		position: relative;
+	top: 50px;
 
 	@media (min-width: 300px) and (max-width: 700px) {
-		top: 175px;
+		top: 40px;
 		font-size: 10px;
 		font-weight: 700;
-		width: 80%;
+		width: 100%;
 	}
 `
 
 export const HeroText = styled.p`
-	margin-bottom: 300px;
+	margin-bottom: 120px;
 	font-size: clamp(0.9rem, 1.5vw, 1.3rem);
 	line-height: 23px;
 	text-align: center;
 	letter-spacing: 2px;
 	color: #fff;
 
-	@media (min-width: 300px) and (max-width: 600px) {
-		margin-bottom: 270px;
+	@media (min-width: 300px) and (max-width: 450px) {
+		margin-bottom: 60px;
+	}
+	@media (min-width: 450px) and (max-width: 800px) {
+		margin-bottom: 60px;
+		margin-left: 5%;
 	}
 `;
 

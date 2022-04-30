@@ -6,14 +6,14 @@ import { CheckoutContainer, CheckoutPaypalCont, DescCheckout, InfoContainer, Pag
 import PaypalButton from './Components/PaypalButton';
 
 const Checkout = () => {
+
+
   return (
     <>
-
     <PageCont>
 
     <ProductImage src={StreamPlay} />
         <CheckoutContainer>
-            
 
             <CheckoutPaypalCont>
                 <PaypalButton className="color:white" />

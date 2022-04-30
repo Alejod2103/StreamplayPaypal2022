@@ -75,6 +75,7 @@ export const Img = styled(motion.img)`
 	vertical-align: middle;
 	display: inline-block;
 	object-fit: cover;
+	border-radius: 35px;
 	max-height: 700px;
 	z-index: 1;
 `;

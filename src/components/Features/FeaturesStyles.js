@@ -5,6 +5,8 @@ export const FeatureTitle = styled.h2`
 	text-align: center;
 	font-size: clamp(1.3rem, 13vw, 3.1rem);
 	line-height: 1.06;
+	color: #2547a8;
+	text-shadow: 2px 3px 1px #fff;
 	letter-spacing: 0.4rem;
 	margin: auto;
 `;
@@ -38,7 +40,7 @@ export const FeatureColumn = styled(motion.div)`
 	align-items: center;
 	background: #f3f3f3;
 	padding: 10px;
-	box-shadow: 0 0 32px 8px #d0d0d0;
+	box-shadow: 0 0 5px 2px #d0d0d0;
 	border-radius: 20px;
 `;
 

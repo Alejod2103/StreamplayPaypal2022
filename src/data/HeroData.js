@@ -7,7 +7,7 @@ export const heroOne = {
 	headline: "Stream Play Tv Series",
 	description: 'Disfruta de nuestro amplio catálogo con mas de +650 series en español e idioma original.',
 	imgStart: 'start',
-	img: './assets/home.png',
+	img: './assets/publi1.jpg',
 	buttonLabel: 'Ver Catalogo' ,
 	start: 'true',
 	LinkTo: '/Catalogo',

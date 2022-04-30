@@ -5,6 +5,7 @@ export const BannerContent = styled.div`
     margin-left: 30px;
     padding-top: 14px;
     height: 190px;
+
     `;
 
 export const BannerBackground = styled.header`
@@ -27,8 +28,13 @@ export const BannerTitulo = styled.h1`
     padding-bottom: 0.3rem;
 
     @media (min-width: 300px) and (max-width: 400px) {
-        margin-top: 210px;
+        margin-top: 410px;
         margin-left: -20px;
+        font-size: 3.5rem;
+    }
+    @media (min-width: 400px) and (max-width: 800px) {
+        margin-top: 400px;
+        width: 10%;
         font-size: 3.5rem;
     }
 `;
@@ -73,7 +79,9 @@ export const BannerBoton = styled.button`
 export const BannerDesc = styled.h1`
     width: 45rem;
     line-height: 1.3;
+    position: relative;
     color: #fff;
+    width: 100%;
     font-weight: 800;
     padding-top: 2.5rem;
     font-size: 1.2rem;
@@ -84,8 +92,6 @@ export const BannerDesc = styled.h1`
     margin-left: 13px;
 
     @media (min-width: 450px) and (max-width: 700px) {
-        max-width: 800px;
-        width: 310px;
         letter-spacing: none;
         font-size: 1rem;
         padding-top: 4.5rem;
@@ -93,8 +99,6 @@ export const BannerDesc = styled.h1`
 
     @media (min-width: 300px) and (max-width: 450px){
         max-width: 350px;
-        width: 300px;
-        margin-top: 10px;
         margin-left: -5px;
         font-size: 14px;        
     }

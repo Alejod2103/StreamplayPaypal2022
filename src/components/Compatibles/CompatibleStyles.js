@@ -7,12 +7,13 @@ export const CompatibleContainer = styled.div`
     rgba(1, 223, 245, 1) 100%
   );
   text-align: center;
+  position: relative;
   color: #fff;
   top: -25px;
   z-index: 1;
   margin-bottom: -30px;
   position: relative;
-  height: 300px;
+  height: 100%;
 `
 
 export const CompatibleTitulo = styled.h1`

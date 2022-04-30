@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { IconContext } from 'react-icons';
 import { data, sliderSettings } from './CarouselsData.js';
-import { Row, Heading, Section } from '../../../globalStyles.js';
+import { Row, HeadingCatalog, Section } from '../../../globalStyles.js';
 import {
 	ButtonContainer,
 	ReviewSlider,
@@ -20,9 +20,9 @@ const Carousels = () => {
 		<>
 		<Section className="alejo" margin="auto"  padding="15px 15px" inverse>
 			<Row justify="space-between" margin="1rem" wrap="wrap">
-				<Heading style={{textShadow: "4px 4px #fff",}} inverse>
+				<HeadingCatalog style={{textShadow: "4px 4px #000",}} inverse>
 					Populares en StreamPlay
-				</Heading>
+				</HeadingCatalog>
 				<ButtonContainer>
 					<IconContext.Provider value={{ size: '3rem', color: '#1d609c' }}>
 						<IoIosArrowBack style={{ marginTop: '20px'}} onClick={sliderRef?.slickPrev} />

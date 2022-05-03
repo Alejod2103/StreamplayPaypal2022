@@ -59,6 +59,7 @@ export const ImgWrapper = styled(motion.div)`
 	position: relative;
 `;
 
+
 export const TopLine = styled(motion.div)`
 	font-size: 0.9rem;
 	line-height: 16px;

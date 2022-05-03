@@ -29,7 +29,7 @@ export const HeroSubText = styled.p`
 		font-weight: 700;
 		width: 100%;
 	}
-`
+`;
 
 export const HeroText = styled.p`
 	margin-bottom: 120px;

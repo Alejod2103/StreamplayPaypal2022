@@ -2,7 +2,7 @@ import React from 'react'
 import "bootswatch/dist/lux/bootstrap.min.css";
 import StreamPlay from './sptv.png'
 import './Checkout.css'
-import { CheckoutContainer, CheckoutPaypalCont, DescCheckout, InfoContainer, PageCont, PaqueteText, PriceCheckout, ProductImage } from './CheckoutStyles'
+import { CheckoutContainer, CheckoutPaypalCont, DescCheckout, InfoContainer, PageCont, PaqueteText, PriceCheckout, ProductImage} from './CheckoutStyles'
 import PaypalButton from './Components/PaypalButton';
 
 const Checkout = () => {

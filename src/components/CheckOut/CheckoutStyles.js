@@ -5,6 +5,11 @@ export const PageCont = styled.div`
     width: 100%;
 `;
 
+export const TituloPaypal = styled.h1`
+    font-size: 15px;
+    color: black;
+`;
+
 export const CheckoutContainer = styled.div`
     height: 80%;
     position: relative;

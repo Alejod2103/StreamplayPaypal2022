@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import  bg  from './back.png' 
+import estadium from './publi2.jpg'
  
 const GlobalStyle = createGlobalStyle`
   *{
@@ -30,6 +31,7 @@ export const MainHeading = styled.h1`
 	color: transparent;
 	-webkit-text-stroke: 3px #fff;
 	background: url(${bg});
+	background-clip: border-box;
 	-webkit-background-clip: text;
 	background-position: 0 0;
 	animation: back 20s linear infinite;
@@ -162,6 +164,26 @@ export const Section = styled.section`
 		padding: ${({ smPadding }) => (smPadding ? smPadding : '70px 0')};
 	}
 `;
+
+export const SectionContent = styled.section`
+	padding: ${({ padding }) => (padding ? padding : '140px 0')};
+	margin: ${({ margin }) => (margin ? margin : '')};
+	background: url(${estadium}) ;
+	background-position: cover;
+	background-size: cover;
+	position: ${({ position }) => (position ? position : '')};
+	width: ${({ width }) => (width ? width : 'auto')};
+	min-width: ${({ minWidth }) => (minWidth ? minWidth : 'auto')};
+	max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : 'auto')};
+	height: ${({ height }) => (height ? height : '100%')};
+	max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : 'auto')};
+	min-height: ${({ minHeight }) => (minHeight ? minHeight : 'auto')};
+
+	@media screen and (max-width: 768px) {
+		padding: ${({ smPadding }) => (smPadding ? smPadding : '70px 0')};
+	}
+`;
+
 
 export const Row = styled.div`
 	display: flex;

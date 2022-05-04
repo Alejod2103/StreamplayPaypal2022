@@ -185,12 +185,12 @@ justify-content: center;
 const GridImage = styled.img`
 	position: relative;
 	height: 500px;
-	border-radius: 25px;
+	border-radius: 10px;
 	:hover{
 
 	}
 	@media (min-width: 300px) and (max-width: 450px) {
-		height: 140px;
+		height: 200px;
 
 	}
 	@media (min-width: 450px) and (max-width: 650px) {

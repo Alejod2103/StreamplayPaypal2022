@@ -21,7 +21,6 @@ const Contenttwo = ({
     primary,
 	inverse,
 	reverse,
-	LinkTo
 }) => {
 
     const initial = { opacity: 0, y: 30 };

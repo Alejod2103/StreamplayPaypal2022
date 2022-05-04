@@ -21,8 +21,8 @@ export const featuresData = [
 		imgClass: 'two',
 	},
 	{
-		name: 'Mantenimiento Constante',
-		description: 'Trabajamos constantemente en brindarte el mejor servicio en los servidores mas veloces.',
+		name: '  Contenido Actualizado',
+		description: 'Agregamos estrenos y contenido nuevo todas las semanas.',
 		icon: iconStyle(GrHostMaintenance),
 		imgClass: 'three',
 	},

@@ -24,7 +24,10 @@ export const CompatibleTitulo = styled.h1`
     text-transform: uppercase;
     margin: 1.5rem 0;
     position: relative;
-    padding-bottom: 1rem;    
+    padding-bottom: 1rem;
+    @media (min-width: 300px) and (max-width: 400px) {
+      font-size: 1.5rem;
+    }  
 `;
 
 export const CompatibleSubTitulo = styled.p`

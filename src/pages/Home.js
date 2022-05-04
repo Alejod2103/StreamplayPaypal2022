@@ -17,7 +17,7 @@ const Home = () => {
 			<Content {...heroOne} />
 			<Content {...heroTwo} />
 			<Content {...heroThree} />
-			<ContentAdvise />
+
 			<Contenttwo />
 			<Compatible />
 		</>

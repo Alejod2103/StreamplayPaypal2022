@@ -4,7 +4,6 @@ import Features from '../components/Features/Features';
 import Hero from '../components/Hero/Hero';
 import Compatible from '../components/Compatibles/Compatible.js';
 import { heroOne, heroTwo, heroThree } from '../data/HeroData';
-import { ContentAdvise } from '../components/Content/Contents/Contentadvise';
 import Contenttwo from '../components/Content/Contents/ContentTwo';
 
 // Hero Feature Content Carousel

@@ -64,7 +64,7 @@ const Contenttwo = ({
 								animate={animation}
 								inverse={inverse}
 							>
-								lo mejor en etretenimiento exclusivo
+								lo mejor en entretenimiento exclusivo
 							</HeadingTwo>
 							<Subtitle
 								initial={initial}
@@ -75,7 +75,7 @@ const Contenttwo = ({
 								
 							</Subtitle>
 
-							<Link to={LinkTo}>
+							<Link to={'/Catalogo'}>
 							<ContentButtonTwo
 								initial={initial}
 								transition={{ delay: 1, duration: 0.6 }}
@@ -117,7 +117,7 @@ export default Contenttwo;
 const GridWrapper = styled.div`
 display: grid;
 grid-template-columns: 50% 50%;
-grid-template-rows: 50% ;
+grid-template-rows: 50%;
 width: 100%;
 position: relative;
 gap: 1rem;
@@ -126,6 +126,7 @@ justify-content: center;
 
 @media (min-width: 400px) and (max-width: 650px) {
 	gap: 25px;
+	left: 0;
 }
 
 @media (min-width: 650px) and (max-width: 750px) {
@@ -146,12 +147,24 @@ justify-content: center;
 	left: 0;
 }
 
-@media (min-width: 950px) and (max-width: 1550px) {
+@media (min-width: 950px) and (max-width: 1050px) {
 	display: flex;
 	z-index: -0;
-	margin-left: 3%;
+	left: 0;
+	margin-left: 0;
+	top: -100px;
 }
-`
+
+@media (min-width: 1050px) and (max-width: 1150px) {
+	display: flex;
+	z-index: 1;
+	left: 0;
+}
+@media (min-width: 1150px) and (max-width: 1550px) {
+	display: flex;
+	z-index: 1;
+	left: 0;
+}`
 
 const GridImage = styled.img`
 	position: relative;
@@ -160,9 +173,8 @@ const GridImage = styled.img`
 	:hover{
 
 	}
-
 	@media (min-width: 300px) and (max-width: 450px) {
-		height: 250px;
+		height: 240px;
 
 	}
 	@media (min-width: 450px) and (max-width: 650px) {
@@ -175,12 +187,26 @@ const GridImage = styled.img`
 	@media (min-width: 750px) and (max-width: 850px) {
 		height: 450px;
 	}
-	@media (min-width: 850px) and (max-width: 1550px) {
+	@media (min-width: 850px) and (max-width: 950px) {
+		height: 200px;
+		border-radius: 10px;
+	}
+	@media (min-width: 950px) and (max-width: 1050px) {
+		height: 230px;
+		border-radius: 10px;
+	}
+	@media (min-width: 1050px) and (max-width: 1150px) {
 		height: 220px;
 		border-radius: 10px;
 	}
-
-
+	@media (min-width: 1150px) and (max-width: 1250px) {
+		height: 280px;
+		border-radius: 10px;
+	}
+	@media (min-width: 1250px) and (max-width: 1550px) {
+		height: 300px;
+		border-radius: 10px;
+	}
 `;
 
 const AvisoPeliculas = styled.h1`
@@ -202,6 +228,42 @@ const AvisoPeliculas = styled.h1`
 		font-size: 6.5px;
 		letter-spacing: 0;
 		justify-self: center;
+		color: #9d9d9d;
+	}
+
+	@media (min-width: 650px) and (max-width: 850px){
+		top: 1650px;
+		font-size: 6.5px;
+		letter-spacing: 0;
+		text-align: center;
+		color: #9d9d9d;
+	}
+	@media (min-width: 850px) and (max-width: 950px){
+		top: 500px;
+		font-size: 6.5px;
+		letter-spacing: 0;
+		text-align: center;
+		color: #9d9d9d;
+	}
+	@media (min-width: 950px) and (max-width: 1050px){
+		top: 490px;
+		font-size: 6.5px;
+		letter-spacing: 0;
+		text-align: center;
+		color: #9d9d9d;
+	}
+	@media (min-width: 1050px) and (max-width: 1250px){
+		top: 650px;
+		font-size: 6.5px;
+		letter-spacing: 0;
+		text-align: center;
+		color: #9d9d9d;
+	}
+	@media (min-width: 1250px) and (max-width: 1550px){
+		top: 700px;
+		font-size: 6.5px;
+		letter-spacing: 0;
+		text-align: center;
 		color: #9d9d9d;
 	}
 `;
@@ -242,9 +304,30 @@ const HeadingTwo = styled(motion.h2)`
 		margin-bottom: 0;
 		font-size: 1.5rem;
 	}
-	@media (min-width: 650px) and (max-width: 950px) {
+	@media (min-width: 650px) and (max-width: 750px) {
 		margin-bottom: 0;
 		font-size: 1.5rem;
+	}
+	@media (min-width: 750px) and (max-width: 850px) {
+		margin-bottom: 0;
+		top: -80px;
+		font-size: 1.5rem;
+	}
+	@media (min-width: 850px) and (max-width: 950px) {
+		margin-bottom: 0;
+		top: -80px;
+		font-size: 1.5rem;
+	}
+	@media (min-width: 950px) and (max-width: 1050px) {
+		margin-bottom: 100px;
+	}
+	@media (min-width: 1050px) and (max-width: 1250px) {
+		margin-bottom: 100px;
+		top: -25px;
+	}
+	@media (min-width: 1250px) and (max-width: 1550px) {
+		margin-bottom: 100px;
+		top: -25px;
 	}
 `;
 
@@ -270,11 +353,53 @@ export const TopLineTwo = styled(motion.div)`
 		margin-left: 75px;
 	}
 
-	@media (min-width: 650px) and (max-width: 950px){
+	@media (min-width: 650px) and (max-width: 750px){
 		letter-spacing: 0;
 		font-size: 10px;
 		line-height: 0;
 		margin-left: 75px;
+	}
+	@media (min-width: 750px) and (max-width: 850px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 10px;
+	}
+	@media (min-width: 850px) and (max-width: 950px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 10px;
+	}
+	@media (min-width: 950px) and (max-width: 1050px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 180px;
+	}
+	@media (min-width: 1050px) and (max-width: 1250px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 180px;
+	}
+	@media (min-width: 1250px) and (max-width: 1550px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 180px;
+	}
+	@media (min-width: 1550px) and (max-width: 1850px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 180px;
 	}
 
 `;
@@ -325,6 +450,39 @@ export const ContentButtonTwo = styled(motion.button)`
 	@media (min-width: 350px) and (max-width: 650px){
 		top: 0;
 	}
+	@media (min-width: 650px) and (max-width: 780px){
+		top: 0;
+	}
+	@media (min-width: 780px) and (max-width: 850px){
+		top: 0;
+		margin-top: -30px;
+		left: 300px;
+		margin-bottom: 20px;
+	}
+	@media (min-width: 850px) and (max-width: 950px){
+		top: 0;
+		margin-left: 60%;
+		margin-right: 50%;
+		margin-bottom: 10px;
+	}
+	@media (min-width: 950px) and (max-width: 1050px){
+		top: 250px;
+		margin-left: 60%;
+		margin-right: 50%;
+	}
+	@media (min-width: 1050px) and (max-width: 1250px){
+		margin-left: 70%;
+		margin-right: 50%;
+		bottom: 25px;
+	}
+	@media (min-width: 1250px) and (max-width: 1550px){
+		left: 90%;
+		bottom: 25px;
+	}
+	@media (min-width: 1550px) and (max-width: 1850px){
+		left: 90%;
+		bottom: 25px;
+	}
 `;
 
 export const TextWrapperTwo = styled.div`
@@ -332,6 +490,17 @@ export const TextWrapperTwo = styled.div`
 	padding-top: 0;
 
 	@media (min-width: 300px) and (max-width: 768px) {
+		padding-bottom: 0px;
+		> h1,
+		p {
+			text-align: center;
+		}
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	@media (min-width: 768px) and (max-width: 868px) {
 		padding-bottom: 0px;
 		> h1,
 		p {

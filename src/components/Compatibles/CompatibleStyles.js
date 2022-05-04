@@ -14,7 +14,7 @@ export const CompatibleContainer = styled.div`
   margin-bottom: -30px;
   position: relative;
   height: 100%;
-`
+`;
 
 export const CompatibleTitulo = styled.h1`
     font-size: 2.5rem;

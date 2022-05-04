@@ -190,7 +190,7 @@ const GridImage = styled.img`
 
 	}
 	@media (min-width: 300px) and (max-width: 450px) {
-		height: 240px;
+		height: 140px;
 
 	}
 	@media (min-width: 450px) and (max-width: 650px) {
@@ -366,7 +366,7 @@ export const TopLineTwo = styled(motion.div)`
 		letter-spacing: 0;
 		font-size: 10px;
 		line-height: 0;
-		margin-left: 75px;
+		margin-left: 15px;
 	}
 
 	@media (min-width: 650px) and (max-width: 750px){

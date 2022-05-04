@@ -15,6 +15,7 @@ import Disney from '../img/Disney.jpg';
 import Hbo from '../img/Hbomax.jpg';
 import Hulu from '../img/Hulu.jpg';
 import Prime from '../img/Prime.jpg';
+import { Bounce } from 'react-reveal';
 ;
 
 const Contenttwo = ({
@@ -94,12 +95,30 @@ const Contenttwo = ({
 					>
 
 						<GridWrapper>
+							<Bounce top>
 							<GridImage src={Netflix} />
+							</Bounce>
+
+							<Bounce bottom>
 							<GridImage src={Apple} />
+							</Bounce>
+
+							<Bounce top>
 							<GridImage src={Disney} />
+							</Bounce>
+
+							<Bounce bottom>
 							<GridImage src={Hbo} />
+							</Bounce>
+
+							<Bounce top>
 							<GridImage src={Hulu} />
+							</Bounce>
+							
+							<Bounce bottom>
 							<GridImage src={Prime} />
+							</Bounce>
+							
 						</GridWrapper>
 
 					</ContentColumn>

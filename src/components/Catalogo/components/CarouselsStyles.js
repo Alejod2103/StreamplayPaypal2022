@@ -59,7 +59,7 @@ export const ReviewSlider = styled(Slider)`
 	.slick-track {
 		display: flex;
 		padding: 30px;
-		gap: 3rem;
+		gap: 1rem;
 	}
 	.slick-slide {
 		display: flex;
@@ -92,9 +92,10 @@ export const CardButton = styled.button`
 `;
 
 export const TittleMovie = styled.h1`
-	font-size: 15px;
+	font-size: 14px;
 	position: relative;
 	top: 8px;
+	letter-spacing: 0;
 	font-weight: 700;
 	color: #fff;
 `;

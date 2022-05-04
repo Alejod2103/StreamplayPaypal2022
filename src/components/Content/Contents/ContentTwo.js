@@ -6,10 +6,8 @@ import React,{ useEffect } from 'react';
 import { Container } from '../../../globalStyles';
 import {
 	ContentRow,
-	TextWrapper,
 	Subtitle,
 	ContentColumn,
-	ContentButton,
 } from '../ContentStyles.js';
 import Netflix from '../img/Netflix.jpg';
 import Apple from '../img/Apple.jpg';

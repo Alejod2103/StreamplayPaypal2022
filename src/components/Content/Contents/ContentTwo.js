@@ -133,12 +133,21 @@ export default Contenttwo;
 const GridWrapper = styled.div`
 display: grid;
 grid-template-columns: 50% 50%;
-grid-template-rows: 50%;
+grid-template-rows: 50% 50%;
 width: 100%;
 position: relative;
 gap: 1rem;
 left: 2.5%;
 justify-content: center;
+
+@media (min-width: 300px) and (max-width: 400px) {
+	gap: 10px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 35%;
+	top: -50px;
+	left: 0;
+	
+}
 
 @media (min-width: 400px) and (max-width: 650px) {
 	gap: 25px;

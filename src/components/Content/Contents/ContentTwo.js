@@ -1,3 +1,4 @@
+import Fade from 'react-reveal';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -22,12 +23,24 @@ const Contenttwo = () => {
 			<TextTittle>LO MEJOR EN ENTRETENIMIENTO EXCLUSIVO</TextTittle>
 
 			<GridWrapper>
+				<Fade left>
 				<GridImage src={Netflix} />
+				</Fade>
+				<Fade right>
 				<GridImage src={Apple} />
+				</Fade>
+				<Fade left>
 				<GridImage src={Disney} />
+				</Fade>
+				<Fade right>
 				<GridImage src={Hbo} />
+				</Fade>
+				<Fade left>
 				<GridImage src={Hulu} />
+				</Fade>
+				<Fade right>
 				<GridImage src={Prime} />
+				</Fade>
 			</GridWrapper>
 		</TextContainer>
 

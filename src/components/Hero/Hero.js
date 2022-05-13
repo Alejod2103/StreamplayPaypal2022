@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 import './Hero.css'
 import { Zoom, Bounce } from 'react-reveal';
 import  bg  from '../../back.png'
-import { Container } from '../../globalStyles';
+import { Container, Button } from '../../globalStyles';
 import { HeroSection,ButtonWrapper, HeroText, HeroSubText, TittleContainer } from './HeroStyles';
 
 const Hero = () => {
@@ -22,7 +23,17 @@ const Hero = () => {
 			  </HeroText>
 			</Bounce>
 			<ButtonWrapper>
-				
+			<Zoom left>
+					<Link to="pricing">
+						<Button>Ver Paquetes</Button>
+					</Link>
+					</Zoom>
+
+					<Zoom right>
+					<Link to="Catalogo">
+						<Button>Ver Catalogo</Button>
+					</Link>
+					</Zoom>
 				</ButtonWrapper>				
 				</Container>
 			</HeroSection>

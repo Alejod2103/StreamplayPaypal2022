@@ -10,7 +10,6 @@ import Compatibles from './Compatibles';
 const Home = () => {
 	return (
 		<>
-			<Hero />
 
 			<Features />
 			<Content {...heroOne} />

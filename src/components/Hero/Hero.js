@@ -12,28 +12,9 @@ const Hero = () => {
 		<>
 			<HeroSection>
 				<Container>
-					<TittleContainer>
-						<Zoom top>
-							<MainHeadingTwo>STREAM PLAY TV</MainHeadingTwo>
-						</Zoom>
-					</TittleContainer>
-			<Bounce bottom>
-			  <HeroText>
-				 <HeroSubText className='subtitulo'>Obtén el mejor servicio de TV paga a nivel nacional, con mas +450 canales entre todos nuestros paquetes, contamos con la mejor programación en cuanto a Deportes, infantiles, series, películas y Tv shows. Lo mejor de todo es que contamos con full alta definición 4k en todos nuestros servicios, sin costos escondidos, Sin duda los mejores beneficios a un excelente precio.</HeroSubText>
-			  </HeroText>
-			</Bounce>
+	
 			<ButtonWrapper>
-				<Slide left>
-					<Link to="pricing">
-						<Button>Ver Paquetes</Button>
-					</Link>
-					</Slide>
-
-					<Slide right>
-					<Link to="Catalogo">
-						<Button>Ver Catalogo</Button>
-					</Link>
-					</Slide>
+				
 				</ButtonWrapper>				
 				</Container>
 			</HeroSection>

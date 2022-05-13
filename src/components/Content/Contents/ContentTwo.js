@@ -1,14 +1,7 @@
 import styled from 'styled-components';
-import { useInView } from 'react-intersection-observer';
-import { useAnimation, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import React,{ useEffect } from 'react';
-import { Container } from '../../../globalStyles';
-import {
-	ContentRow,
-	Subtitle,
-	ContentColumn,
-} from '../ContentStyles.js';
+import React from 'react';
 import Netflix from '../img/Netflix.jpg';
 import Apple from '../img/Apple.jpg';
 import Disney from '../img/Disney.jpg';
@@ -18,178 +11,199 @@ import Prime from '../img/Prime.jpg';
 import { Bounce } from 'react-reveal';
 ;
 
-const Contenttwo = ({
-    primary,
-	inverse,
-	reverse,
-}) => {
-
-    const initial = { opacity: 0, y: 30 };
-	const animation = useAnimation();
-
-	const { ref, inView } = useInView({ threshold: 0.2 });
-
-	useEffect(() => {
-		if (inView) {
-			animation.start({
-				opacity: 1,
-				y: 0,
-			});
-		}
-	}, [inView, animation]);
-
+const Contenttwo = () => {
+	
     return (
         <>
-            		<SectionContentTwo inverse={inverse} ref={ref}>
-			<Container>
-				
-				<ContentRow reverse={reverse}>
-				<AvisoPeliculas>StreamPlay no ofrece cuentas para estas plataformas solo su contenido (películas y series)  La disponibilidad de las películas o series es condicional*</AvisoPeliculas>
-					<ContentColumn>
-						
-						<TextWrapperTwo>
-							
-							<TopLineTwo
-								initial={initial}
-								transition={{ delay: 0.3, duration: 0.6 }}
-								animate={animation}
-							>
-								Accede a las películas de TODAS las plataformas, estrenos de cine y mucho más
-							</TopLineTwo>
-							<HeadingTwo
-								initial={initial}
-								transition={{ delay: 0.5, duration: 0.6 }}
-								animate={animation}
-								inverse={inverse}
-							>
-								lo mejor en entretenimiento exclusivo
-							</HeadingTwo>
-							<Subtitle
-								initial={initial}
-								transition={{ delay: 0.7, duration: 0.6 }}
-								animate={animation}
-								inverse={inverse}
-							>
-								
-							</Subtitle>
 
-							<Link to={'/Catalogo'}>
-							<ContentButtonTwo
-								initial={initial}
-								transition={{ delay: 1, duration: 0.6 }}
-								animate={animation}
-								inverse={inverse}
-								primary={primary}
-							>
-								Ver Catalogo
-							</ContentButtonTwo>
-							</Link>
-							
+		<PageContainer>
 
-						</TextWrapperTwo>
-					</ContentColumn>
-					<ContentColumn
-						initial={initial}
-						transition={{ delay: 0.5, duration: 0.6 }}
-						animate={animation}
-					>
+		<TextContainer>
 
-						<GridWrapper>
-							<Bounce top>
-							<GridImage src={Netflix} />
-							</Bounce>
+			<TextTittle>LO MEJOR EN ENTRETENIMIENTO EXCLUSIVO</TextTittle>
 
-							<Bounce bottom>
-							<GridImage src={Apple} />
-							</Bounce>
+			<GridWrapper>
+				<GridImage src={Netflix} />
+				<GridImage src={Apple} />
+				<GridImage src={Disney} />
+				<GridImage src={Hbo} />
+				<GridImage src={Hulu} />
+				<GridImage src={Prime} />
+			</GridWrapper>
+		</TextContainer>
 
-							<Bounce top>
-							<GridImage src={Disney} />
-							</Bounce>
 
-							<Bounce bottom>
-							<GridImage src={Hbo} />
-							</Bounce>
+		<Link to={'/Catalogo'}>
+				<ContentButtonTwo>
+					Ver Catalogo
+				</ContentButtonTwo>
+		</Link>			
 
-							<Bounce top>
-							<GridImage src={Hulu} />
-							</Bounce>
-							
-							<Bounce bottom>
-							<GridImage src={Prime} />
-							</Bounce>
-							
-						</GridWrapper>
+		</PageContainer>
 
-					</ContentColumn>
-				</ContentRow>
-			</Container>
-		</SectionContentTwo>
         </>
     );
 }
 export default Contenttwo;
 
+//Propiedades del grid que muestra las imagenes - NO TOCAR
+
 const GridWrapper = styled.div`
 display: grid;
-grid-template-columns: 50% 50%;
-grid-template-rows: 50% 50%;
+box-sizing: border-box;
+grid-template-columns: 120px 120px;
+grid-template-rows: 140px 140px;
 width: 100%;
-position: relative;
-gap: 1rem;
-left: 2.5%;
-justify-content: center;
-
+max-width: 400px;
+justify-content: space-evenly;
+gap: 80px;
+z-index: 1;
 @media (min-width: 300px) and (max-width: 400px) {
-	gap: 10px;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 35%;
-	top: -50px;
-	left: 0;
-	
+	gap: 50px;
+	grid-template-columns: 50px 120px;
 }
 
-@media (min-width: 400px) and (max-width: 650px) {
-	gap: 25px;
-	left: 0;
+@media (min-width: 400px) and (max-width: 450px) {
+	gap: 45px;
+	grid-template-columns: 35px 75px;
 }
 
-@media (min-width: 650px) and (max-width: 750px) {
-	gap: 25px;
-	z-index: -0;
+@media (min-width: 450px) and (max-width: 470px) {
+	gap: 58px;
+	grid-template-columns: 30px 80px;
 }
 
-@media (min-width: 750px) and (max-width: 850px) {
-	gap: 25px;
-	z-index: -0;
-	margin-left: 3%;
+@media (min-width: 470px) and (max-width: 500px){
+	gap: 58px;
+	grid-template-columns: 35px 7%;
+}
+@media (min-width: 500px) and (max-width: 550px){
+	gap: 58px;
+	grid-template-columns: 35px 2%;
+}
+@media (min-width: 550px) and (max-width: 600px){
+	gap: 78px;
+	grid-template-columns: 35px 30px;
+	margin-left: 52px;
 }
 
-@media (min-width: 850px) and (max-width: 950px) {
+@media (min-width: 600px) and (max-width: 650px){
+	gap: 88px;
+	grid-template-columns: 32px 30px;
+	margin-left: 14%;
+}
+
+@media (min-width: 650px) and (max-width: 700px){
+	gap: 120px;
+	grid-template-columns: 32px 30px;
+	margin-left: 14%;
+}
+
+@media (min-width: 700px) and (max-width: 750px){
+	gap: 150px;
+	grid-template-columns: 32px 30px;
+	margin-left: 14%;
+}
+
+@media (min-width: 750px) and (max-width: 800px){
+	gap: 180px;
+	grid-template-columns: 32px 30px;
+	margin-left: 14%;
+}
+@media (min-width: 800px) and (max-width: 850px){
+	gap: 180px;
+	grid-template-columns: 32px 30px;
+	margin-left: 16%;
+}
+@media (min-width: 850px) and (max-width: 900px){
+	gap: 180px;
+	grid-template-columns: 32px 30px;
+	margin-left: 16%;
+}
+
+@media (min-width: 900px) and (max-width: 950px){
+	gap: 230px;
+	grid-template-columns: 32px 30px;
+	margin-left: 22%;
+}
+
+@media (min-width: 950px) and (max-width: 1000px){
+	gap: 230px;
+	grid-template-columns: 32px 30px;
+	margin-left: 22%;
+}
+
+@media (min-width: 1000px) and (max-width: 1050px){
 	display: flex;
-	z-index: -0;
-	margin-left: 0;
-	left: 0;
+	gap: 20px;
+	flex-wrap: nowrap;
+	width: 10%;
+	margin-left: 44%;
 }
 
-@media (min-width: 950px) and (max-width: 1050px) {
+@media (min-width: 1050px) and (max-width: 1100px){
 	display: flex;
-	z-index: -0;
-	left: 0;
-	margin-left: 0;
-	top: -100px;
+	gap: 20px;
+	flex-wrap: nowrap;
+	width: 10%;
+	margin-left: 44%;
+}
+@media (min-width: 1100px) and (max-width: 1150px){
+	display: flex;
+	gap: 20px;
+	flex-wrap: nowrap;
+	width: 3%;
+	margin-left: 48%;
+}
+@media (min-width: 1150px) and (max-width: 1200px){
+	display: flex;
+	gap: 20px;
+	flex-wrap: nowrap;
+	width: 10%;
+	margin-left: 44%;
+}
+@media (min-width: 1200px) and (max-width: 1250px){
+	display: flex;
+	gap: 20px;
+	flex-wrap: nowrap;
+	max-width: 10px;
+	width: 200px;
+	margin-left: 49%;
+}
+@media (min-width: 1250px) and (max-width: 1300px){
+	display: flex;
+	gap: 20px;
+	flex-wrap: nowrap;
+	width: 5%;
+	max-width: 100px;
+	margin-left: 48%;
+}
+@media (min-width: 1300px) and (max-width: 1400px){
+	display: flex;
+	gap: 20px;
+	flex-wrap: nowrap;
+	width: 5%;
+	max-width: 100px;
+	margin-left: 46%;
+}
+@media (min-width: 1400px) and (max-width: 1600px){
+	display: flex;
+	gap: 20px;
+	flex-wrap: nowrap;
+	width: 5%;
+	max-width: 100px;
+	margin-left: 47.5%;
+}
+@media (min-width: 1600px) and (max-width: 1800px){
+	display: flex;
+	gap: 20px;
+	flex-wrap: nowrap;
+	width: 5%;
+	max-width: 100px;
+	margin-left: 47.5%;
 }
 
-@media (min-width: 1050px) and (max-width: 1150px) {
-	display: flex;
-	z-index: 1;
-	left: 0;
-}
-@media (min-width: 1150px) and (max-width: 1550px) {
-	display: flex;
-	z-index: 1;
-	left: 0;
-}`
+`;
 
 const GridImage = styled.img`
 	position: relative;
@@ -199,38 +213,245 @@ const GridImage = styled.img`
 
 	}
 	@media (min-width: 300px) and (max-width: 450px) {
-		height: 200px;
-
+		height: 175px;	
 	}
-	@media (min-width: 450px) and (max-width: 650px) {
-		height: 350px;
-		margin-left: -9.5px;
+	@media (min-width: 450px) and (max-width: 550px) {
+		height: 190px;
 	}
-	@media (min-width: 650px) and (max-width: 750px) {
-		height: 450px;
+	@media (min-width: 550px) and (max-width: 650px) {
+		height: 210px;
 	}
-	@media (min-width: 750px) and (max-width: 850px) {
-		height: 450px;
+	@media (min-width: 650px) and (max-width: 700px){
+		height: 250px;
 	}
-	@media (min-width: 850px) and (max-width: 950px) {
-		height: 200px;
-		border-radius: 10px;
-	}
-	@media (min-width: 950px) and (max-width: 1050px) {
-		height: 230px;
-		border-radius: 10px;
-	}
-	@media (min-width: 1050px) and (max-width: 1150px) {
-		height: 220px;
-		border-radius: 10px;
-	}
-	@media (min-width: 1150px) and (max-width: 1250px) {
+	@media (min-width: 700px) and (max-width: 750px){
 		height: 280px;
-		border-radius: 10px;
 	}
-	@media (min-width: 1250px) and (max-width: 1550px) {
+	@media (min-width: 750px) and (max-width: 800px){
+		height: 310px;
+	}
+	@media (min-width: 800px) and (max-width: 850px){
+		height: 310px;
+	}
+	@media (min-width: 850px) and (max-width: 900px){
+		height: 310px;
+	}
+	@media (min-width: 900px) and (max-width: 950px){
+		height: 360px;
+	}
+	@media (min-width: 950px) and (max-width: 1000px){
+		height: 360px;
+	}
+	@media (min-width: 1000px) and (max-width: 1050px){
+		height: 220px;
+	}
+	@media (min-width: 1050px) and (max-width: 1100px){
+		height: 240px;
+	}
+	@media (min-width: 1100px) and (max-width: 1150px){
+		height: 270px;
+	}
+	@media (min-width: 1150px) and (max-width: 1200px){
+		height: 270px;
+	}
+	@media (min-width: 1200px) and (max-width: 1250px){
+		height: 270px;
+	}
+	@media (min-width: 1250px) and (max-width: 1300px){
 		height: 300px;
-		border-radius: 10px;
+	}
+	@media (min-width: 1300px) and (max-width: 1400px){
+		height: 330px;
+	}
+	@media (min-width: 1400px) and (max-width: 1500px){
+		height: 340px;
+	}
+	@media (min-width: 1500px) and (max-width: 1550px){
+		height: 340px;
+	}
+	@media (min-width: 1550px) and (max-width: 1600px){
+		height: 370px;
+	}
+	@media (min-width: 1600px) and (max-width: 1800px){
+		height: 370px;
+	}
+	@media (min-width: 1800px) and (max-width: 1900px){
+		
+	}
+`;
+
+//Propiedades de los esilos de componente
+export const TextWrapperTwo = styled.div`
+	max-width: 540px;
+	padding-top: 0;
+	@media (min-width: 300px) and (max-width: 768px) {
+		padding-bottom: 0px;
+		> h1,
+		p {
+			text-align: center;
+		}
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	@media (min-width: 768px) and (max-width: 868px) {
+		padding-bottom: 0px;
+		> h1,
+		p {
+			text-align: center;
+		}
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	> img {
+		width: 300px;
+		margin-left: -3px;
+	}
+`;
+
+export const ContentButtonTwo = styled(motion.button)`
+	height: 3rem;
+	padding: 16px 32px;
+	font-weight: 700;
+	font-size: 0.8rem;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	line-height: 18px;
+	letter-spacing: 1.54px;
+	text-transform: uppercase;
+	cursor: pointer;
+	background: none;
+	color: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
+	border-radius: 4px;
+	white-space: nowrap;
+	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
+	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+	outline: none;
+	border: 2px solid ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	&:before {
+		background: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
+		content: '';
+		position: relative;
+		top: 50%;
+		left: 50%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		transition: all 0.6s ease;
+		width: 100%;
+		height: 0%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+	&:hover:before {
+		height: 500%;
+	}
+	&:hover {
+		color: ${({ inverse }) => (inverse ? 'white' : 'black')};
+	}
+	@media (min-width: 300px) and (max-width: 400px){
+		margin-left: 23%;
+	}
+	@media (min-width: 400px) and (max-width: 500px){
+		margin-left: 28%;
+	}
+	@media (min-width: 500px) and (max-width: 600px){
+		margin-left: 34%;
+	}
+	@media (min-width: 600px) and (max-width: 700px){
+		margin-left: 38%;
+	}
+	@media (min-width: 700px) and (max-width: 800px){
+		margin-left: 42%;
+	}
+	@media (min-width: 800px) and (max-width: 900px){
+		margin-left: 45%;
+	}
+	@media (min-width: 900px) and (max-width: 1000px){
+		margin-left: 45%;
+	}
+	@media (min-width: 1000px) and (max-width: 1200px){
+		margin-left: 45%;
+	}
+	@media (min-width: 1200px) and (max-width: 1500px){
+		margin-left: 45%;
+	}
+	@media (min-width: 1500px) and (max-width: 1800px){
+		margin-left: 45%;
+	}
+`;
+
+
+export const TopLineTwo = styled(motion.div)`
+	font-size: 0.9rem;
+	position: relative;
+	width: 100%;
+	line-height: 16px;
+	font-weight: 550;
+	letter-spacing: 1.4px;
+	margin-bottom: 1.3rem;
+	color: #979797;
+	@media (min-width: 300px) and (max-width: 450px){
+		letter-spacing: 0;
+		font-size: 0.8rem;
+	}
+	@media (min-width: 450px) and (max-width: 650px){
+		letter-spacing: 0;
+		font-size: 10px;
+		line-height: 0;
+		margin-left: 15px;
+	}
+	@media (min-width: 650px) and (max-width: 750px){
+		letter-spacing: 0;
+		font-size: 10px;
+		line-height: 0;
+		margin-left: 75px;
+	}
+	@media (min-width: 750px) and (max-width: 850px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 10px;
+	}
+	@media (min-width: 850px) and (max-width: 950px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 10px;
+	}
+	@media (min-width: 950px) and (max-width: 1050px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 180px;
+	}
+	@media (min-width: 1050px) and (max-width: 1250px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 180px;
+	}
+	@media (min-width: 1250px) and (max-width: 1550px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 180px;
+	}
+	@media (min-width: 1550px) and (max-width: 1850px){
+		letter-spacing: 0;
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 0;
+		top: 180px;
 	}
 `;
 
@@ -291,255 +512,61 @@ const AvisoPeliculas = styled.h1`
 		text-align: center;
 		color: #9d9d9d;
 	}
-`;
-
-const SectionContentTwo = styled.section`
-	padding: ${({ padding }) => (padding ? padding : '140px 0')};
-	margin: ${({ margin }) => (margin ? margin : '')};
-	background: #000 ;
-	background-position: cover;
-	background-size: cover;
-	position: ${({ position }) => (position ? position : '')};
-	width: ${({ width }) => (width ? width : 'auto')};
-	min-width: ${({ minWidth }) => (minWidth ? minWidth : 'auto')};
-	max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : 'auto')};
-	height: ${({ height }) => (height ? height : '100%')};
-	max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : 'auto')};
-	min-height: ${({ minHeight }) => (minHeight ? minHeight : 'auto')};
-
-	@media screen and (max-width: 768px) {
-		padding: ${({ smPadding }) => (smPadding ? smPadding : '70px 0')};
+	@media (min-width: 1550px) and (max-width: full-width){
+		top: 700px;
+		font-size: 6.5px;
+		letter-spacing: 0;
+		text-align: center;
+		color: #9d9d9d;
 	}
 `;
 
-const HeadingTwo = styled(motion.h2)`
-	margin-bottom: 450px;
-	position: relative;
-	font-size: 3rem;
-	line-height: 1.1;
-	font-weight: 600;
-	color: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
-
-	@media (min-width: 300px) and (max-width: 450px) {
-		margin-bottom: 0;
-		font-size: 1.5rem;
-	}
-
-	@media (min-width: 450px) and (max-width: 650px) {
-		margin-bottom: 0;
-		font-size: 1.5rem;
-	}
-	@media (min-width: 650px) and (max-width: 750px) {
-		margin-bottom: 0;
-		font-size: 1.5rem;
-	}
-	@media (min-width: 750px) and (max-width: 850px) {
-		margin-bottom: 0;
-		top: -80px;
-		font-size: 1.5rem;
-	}
-	@media (min-width: 850px) and (max-width: 950px) {
-		margin-bottom: 0;
-		top: -80px;
-		font-size: 1.5rem;
-	}
-	@media (min-width: 950px) and (max-width: 1050px) {
-		margin-bottom: 100px;
-	}
-	@media (min-width: 1050px) and (max-width: 1250px) {
-		margin-bottom: 100px;
-		top: -25px;
-	}
-	@media (min-width: 1250px) and (max-width: 1550px) {
-		margin-bottom: 100px;
-		top: -25px;
-	}
-`;
-
-export const TopLineTwo = styled(motion.div)`
-	font-size: 0.9rem;
-	position: relative;
+const PageContainer = styled.div`
 	width: 100%;
-	line-height: 16px;
-	font-weight: 550;
-	letter-spacing: 1.4px;
-	margin-bottom: 1.3rem;
-	color: #979797;
-
-	@media (min-width: 300px) and (max-width: 450px){
-		letter-spacing: 0;
-		font-size: 0.8rem;
-	}
-
-	@media (min-width: 450px) and (max-width: 650px){
-		letter-spacing: 0;
-		font-size: 10px;
-		line-height: 0;
-		margin-left: 15px;
-	}
-
-	@media (min-width: 650px) and (max-width: 750px){
-		letter-spacing: 0;
-		font-size: 10px;
-		line-height: 0;
-		margin-left: 75px;
-	}
-	@media (min-width: 750px) and (max-width: 850px){
-		letter-spacing: 0;
-		font-size: 13px;
-		margin-bottom: 0;
-		line-height: 0;
-		top: 10px;
-	}
-	@media (min-width: 850px) and (max-width: 950px){
-		letter-spacing: 0;
-		font-size: 13px;
-		margin-bottom: 0;
-		line-height: 0;
-		top: 10px;
-	}
-	@media (min-width: 950px) and (max-width: 1050px){
-		letter-spacing: 0;
-		font-size: 13px;
-		margin-bottom: 0;
-		line-height: 0;
-		top: 180px;
-	}
-	@media (min-width: 1050px) and (max-width: 1250px){
-		letter-spacing: 0;
-		font-size: 13px;
-		margin-bottom: 0;
-		line-height: 0;
-		top: 180px;
-	}
-	@media (min-width: 1250px) and (max-width: 1550px){
-		letter-spacing: 0;
-		font-size: 13px;
-		margin-bottom: 0;
-		line-height: 0;
-		top: 180px;
-	}
-	@media (min-width: 1550px) and (max-width: 1850px){
-		letter-spacing: 0;
-		font-size: 13px;
-		margin-bottom: 0;
-		line-height: 0;
-		top: 180px;
-	}
-
+	height: 100%;
+	background-color: #000;
 `;
 
-export const ContentButtonTwo = styled(motion.button)`
-	height: 3rem;
-	padding: 16px 32px;
-	font-weight: 700;
-	font-size: 0.8rem;
-	line-height: 18px;
-	letter-spacing: 1.54px;
-	text-transform: uppercase;
-	cursor: pointer;
-	background: none;
-	color: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
-	border-radius: 4px;
-	white-space: nowrap;
-	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
-	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
-	outline: none;
-	border: 2px solid ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-
-	&:before {
-		background: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: -1;
-		transition: all 0.6s ease;
-		width: 100%;
-		height: 0%;
-		transform: translate(-50%, -50%) rotate(45deg);
-	}
-
-	&:hover:before {
-		height: 500%;
-	}
-
-	&:hover {
-		color: ${({ inverse }) => (inverse ? 'white' : 'black')};
-	}
-
-	@media (min-width: 350px) and (max-width: 650px){
-		top: 0;
-	}
-	@media (min-width: 650px) and (max-width: 780px){
-		top: 0;
-	}
-	@media (min-width: 780px) and (max-width: 850px){
-		top: 0;
-		margin-top: -30px;
-		left: 300px;
-		margin-bottom: 20px;
-	}
-	@media (min-width: 850px) and (max-width: 950px){
-		top: 0;
-		margin-left: 60%;
-		margin-right: 50%;
-		margin-bottom: 10px;
-	}
-	@media (min-width: 950px) and (max-width: 1050px){
-		top: 250px;
-		margin-left: 60%;
-		margin-right: 50%;
-	}
-	@media (min-width: 1050px) and (max-width: 1250px){
-		margin-left: 70%;
-		margin-right: 50%;
-		bottom: 25px;
-	}
-	@media (min-width: 1250px) and (max-width: 1550px){
-		left: 90%;
-		bottom: 25px;
-	}
-	@media (min-width: 1550px) and (max-width: 1850px){
-		left: 90%;
-		bottom: 25px;
-	}
+const TextContainer = styled.div`
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	z-index: 2;
 `;
 
-export const TextWrapperTwo = styled.div`
-	max-width: 540px;
-	padding-top: 0;
-
-	@media (min-width: 300px) and (max-width: 768px) {
-		padding-bottom: 0px;
-		> h1,
-		p {
-			text-align: center;
-		}
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+const TextTittle = styled.h1`
+	font-size: 15px;
+	z-index: 2;
+	margin-bottom: 40px;
+	color: #fff;
+	margin-left: 5%;
+	margin-right: 5%;
+	@media (min-width: 420px) and (max-width: 500px ) {
+		font-size: 18px;
 	}
-
-	@media (min-width: 768px) and (max-width: 868px) {
-		padding-bottom: 0px;
-		> h1,
-		p {
-			text-align: center;
-		}
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	@media (min-width: 500px) and (max-width: 600px){
+		font-size: 23px;
 	}
-
-	> img {
-		width: 300px;
-		margin-left: -3px;
+	@media (min-width: 600px) and (max-width: 700px){
+		font-size: 28px;
+	}
+	@media (min-width: 700px) and (max-width: 800px){
+		font-size: 33px;
+	}
+	@media (min-width: 800px) and (max-width: 900px){
+		font-size: 36px;
+	}
+	@media (min-width: 900px) and (max-width: 1000px){
+		font-size: 36px;
+	}
+	@media (min-width: 1000px) and (max-width: 1200px){
+		font-size: 36px;
+	}
+	@media (min-width: 1200px) and (max-width: 1500px){
+		font-size: 36px;
+	}
+	@media (min-width: 1500px) and (max-width: 1700px){
+		font-size: 36px;
 	}
 `;
-
-

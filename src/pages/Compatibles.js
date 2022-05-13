@@ -1,10 +1,10 @@
 import React from 'react';
-import Compatibles from '../components/Compatibles/Compatibles';
+import Compatible from '../components/Compatibles/Compatible';
 
 const Compatibles = () => {
   return (
     <>
-      <Compatibles />
+      <Compatible />
     </>
   );
  };

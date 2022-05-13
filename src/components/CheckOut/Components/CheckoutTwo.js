@@ -1,7 +1,7 @@
 import React from 'react'
 import "bootswatch/dist/lux/bootstrap.min.css";
-import StreamPlay from '../sptv.png'
-import '../Checkout.css'
+import StreamPlay from '../sptv.png';
+import '../Checkout.css';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { CheckoutContainer, CheckoutPaypalCont, DescCheckout, InfoContainer, PageCont, PaqueteText, PriceCheckout, ProductImage } from '../CheckoutStyles.js'
 

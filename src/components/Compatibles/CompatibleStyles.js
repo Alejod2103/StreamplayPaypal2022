@@ -22,7 +22,7 @@ export const CompatibleTitulo = styled.h1`
     color: #fff;
     line-height: 1.4;
     text-transform: uppercase;
-    margin: 1.5rem 0;
+    margin: 2.4rem 0;
     position: relative;
     padding-bottom: 1rem;
     @media (min-width: 300px) and (max-width: 400px) {
@@ -31,9 +31,24 @@ export const CompatibleTitulo = styled.h1`
 `;
 
 export const CompatibleSubTitulo = styled.p`
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 18px;
+    position: relative;
+    top: -40px;
+    line-height: 24px;
     font-weight: 300;
+    text-align: center;
+
+    @media (min-width: 300px) and (max-width: 400px) {
+            
+    }
+
+
+    @media (min-width: 400px) and (max-width: 500px){
+      font-size: 15px;
+      margin: 1.2rem;
+      width: 380px;
+      padding: 10px;
+    }
 `;
 
 export const CompatibleIconCont = styled.div`
@@ -44,6 +59,13 @@ export const CompatibleIconCont = styled.div`
 
     @media (min-width: 300px) and (max-width: 600px)  {
     flex-direction: column;
+    }
+
+    @media (min-width: 600px) and (max-width: 800px)  {
+    flex-direction: column;
+    }
+    @media (min-width: 800px) and (max-width: 900px)  {
+
     }
 `;
 
@@ -56,5 +78,10 @@ export const CompatibleIcon = styled.div`
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
+    @media (min-width: 800px) and (max-width: 900px){
+       padding: 5px;
+       width: 11rem;
+    }
 `;

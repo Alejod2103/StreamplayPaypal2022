@@ -121,6 +121,10 @@ export const FooterLogo = styled(Link)`
 	display: flex;
 	align-items: center;
 	margin-bottom: 16px;
+
+	@media (min-width: 300px) and (max-width: 450px) {
+		font-size: 1rem;
+	}
 `;
 
 export const SocialIcon = styled.img`

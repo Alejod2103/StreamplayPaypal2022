@@ -31,6 +31,7 @@ export const HeroSubText = styled.p`
 
 	@media (min-width: 300px) and (max-width: 350px) {
 		font-size: 12px;
+		max-width: 120px;
 	}
 
 	@media (min-width: 350px) and (max-width: 550px) {
@@ -54,6 +55,8 @@ export const HeroText = styled.p`
 
 	@media (min-width: 300px) and (max-width: 450px) {
 		margin-bottom: 60px;
+		width: 150px;
+		max-width: 150px;
 	}
 	@media (min-width: 450px) and (max-width: 550px) {
 		margin-bottom: 60px;

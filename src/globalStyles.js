@@ -52,7 +52,7 @@ export const HeadingCatalog = styled.h2`
 	width: ${({ width }) => (width ? width : '100%')};
 
 	@media (min-width: 300px) and (max-width:400px) {
-		font-size: 29px;
+		font-size: 25px;
 	}
 `;
 

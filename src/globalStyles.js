@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import  bg  from './back.png' 
 import estadium from './publi2.jpg'
  
 const GlobalStyle = createGlobalStyle`

@@ -8,7 +8,6 @@ import Disney from '../img/Disney.jpg';
 import Hbo from '../img/Hbomax.jpg';
 import Hulu from '../img/Hulu.jpg';
 import Prime from '../img/Prime.jpg';
-import { Bounce } from 'react-reveal';
 ;
 
 const Contenttwo = () => {
@@ -452,72 +451,6 @@ export const TopLineTwo = styled(motion.div)`
 		margin-bottom: 0;
 		line-height: 0;
 		top: 180px;
-	}
-`;
-
-const AvisoPeliculas = styled.h1`
-	font-size: 9px;
-	color: #fff;
-	top: 40px;
-	width: 100%;
-	position: relative;
-	@media (min-width: 300px) and (max-width: 450px){
-		top: 10;
-		font-size: 6.5px;
-		letter-spacing: 0;
-		justify-self: center;
-		color: #9d9d9d;
-	}
-
-	@media (min-width: 450px) and (max-width: 650px){
-		top: 10;
-		font-size: 6.5px;
-		letter-spacing: 0;
-		justify-self: center;
-		color: #9d9d9d;
-	}
-
-	@media (min-width: 650px) and (max-width: 850px){
-		top: 1650px;
-		font-size: 6.5px;
-		letter-spacing: 0;
-		text-align: center;
-		color: #9d9d9d;
-	}
-	@media (min-width: 850px) and (max-width: 950px){
-		top: 500px;
-		font-size: 6.5px;
-		letter-spacing: 0;
-		text-align: center;
-		color: #9d9d9d;
-	}
-	@media (min-width: 950px) and (max-width: 1050px){
-		top: 490px;
-		font-size: 6.5px;
-		letter-spacing: 0;
-		text-align: center;
-		color: #9d9d9d;
-	}
-	@media (min-width: 1050px) and (max-width: 1250px){
-		top: 650px;
-		font-size: 6.5px;
-		letter-spacing: 0;
-		text-align: center;
-		color: #9d9d9d;
-	}
-	@media (min-width: 1250px) and (max-width: 1550px){
-		top: 700px;
-		font-size: 6.5px;
-		letter-spacing: 0;
-		text-align: center;
-		color: #9d9d9d;
-	}
-	@media (min-width: 1550px) and (max-width: full-width){
-		top: 700px;
-		font-size: 6.5px;
-		letter-spacing: 0;
-		text-align: center;
-		color: #9d9d9d;
 	}
 `;
 

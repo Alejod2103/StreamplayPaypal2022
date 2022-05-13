@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components'
 import './Hero.css'
 import  bg  from '../../back.png' 
-import { Zoom, Bounce, Slide } from 'react-reveal';
-import { Link } from 'react-router-dom';
-import { Button, Container } from '../../globalStyles';
-import { HeroSection, HeroSubText, HeroText, ButtonWrapper, TittleContainer } from './HeroStyles';
+import { Container } from '../../globalStyles';
+import { HeroSection, ButtonWrapper } from './HeroStyles';
 
 const Hero = () => {
 	return (

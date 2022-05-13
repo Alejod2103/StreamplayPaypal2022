@@ -53,6 +53,9 @@ export const HeadingCatalog = styled.h2`
 
 	@media (min-width: 300px) and (max-width:400px) {
 		font-size: 25px;
+	} 
+	@media (min-width: 400px) and (max-width: 600px) {
+		font-size: 25px;
 	}
 `;
 

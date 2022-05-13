@@ -55,8 +55,8 @@ export const HeroText = styled.p`
 
 	@media (min-width: 300px) and (max-width: 450px) {
 		margin-bottom: 60px;
-		width: 150px;
-		max-width: 150px;
+		width: 350px;
+		max-width: 350px;
 	}
 	@media (min-width: 450px) and (max-width: 550px) {
 		margin-bottom: 60px;
@@ -80,6 +80,11 @@ export const ButtonWrapper = styled.div`
 	flex-flow: wrap;
 	gap: 0.5rem;
 	margin-bottom: 40px;
+
+	@media (min-width: 300px) and (max-width: 450px){
+		width: 90%;		
+		left: 20px;
+	}
 `;
 
 export const HeroButton = styled(Button)`

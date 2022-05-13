@@ -80,7 +80,9 @@ export const MainHeadingTwo = styled.h1`
 
 	@media (min-width: 400px) and (max-width: 450px){
 		font-size: 35px;
-		left: 15px;
+		left: 20px;
+		margin-top: -80px;
+		width: 80%;
 		line-height: 40px;
 	}
 

@@ -1,23 +1,32 @@
 import React from 'react';
 import styled from 'styled-components'
 import './Hero.css'
-import  bg  from '../../back.png' 
+import { Zoom, Bounce } from 'react-reveal';
+import  bg  from '../../back.png'
 import { Container } from '../../globalStyles';
-import { HeroSection, ButtonWrapper } from './HeroStyles';
+import { HeroSection,ButtonWrapper, HeroText, HeroSubText, TittleContainer } from './HeroStyles';
 
 const Hero = () => {
 	return (
 		<>
 			<HeroSection>
 				<Container>
-	
+				<TittleContainer>
+						<Zoom top>
+							<MainHeadingTwo>STREAM PLAY TV</MainHeadingTwo>
+						</Zoom>
+					</TittleContainer>
+			<Bounce bottom>
+			  <HeroText>
+				 <HeroSubText className='subtitulo'>Obtén el mejor servicio de TV paga a nivel nacional, con mas +450 canales entre todos nuestros paquetes, contamos con la mejor programación en cuanto a Deportes, infantiles, series, películas y Tv shows. Lo mejor de todo es que contamos con full alta definición 4k en todos nuestros servicios, sin costos escondidos, Sin duda los mejores beneficios a un excelente precio.</HeroSubText>
+			  </HeroText>
+			</Bounce>
 			<ButtonWrapper>
 				
 				</ButtonWrapper>				
 				</Container>
 			</HeroSection>
 		</>
-		
 	);
 };
 

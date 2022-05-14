@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import React,{ useEffect } from 'react';
+import React from 'react';
 import AnimalPlanet from '../img/canales/AnimalPlanet.jpg';
 import Star from '../img/canales/Star.jpg';
 import Show from '../img/canales/ShowTime.jpg'
@@ -760,98 +760,6 @@ const ImgCanales = styled.div`
 	background-image: url(${Canales});
 `;
 
-const GridImgContainer = styled.div`
-	height: 100px;
-	width: 200px;
-	border-radius: 5%;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-image: url(${Cnn});
-`;
-
-
-const ContentButtonTwo = styled(motion.button)`
-	height: 3rem;
-	padding: 16px 32px;
-	font-weight: 700;
-	font-size: 0.8rem;
-	line-height: 18px;
-	letter-spacing: 1.54px;
-	text-transform: uppercase;
-	cursor: pointer;
-	background: none;
-	color: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
-	border-radius: 4px;
-	white-space: nowrap;
-	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
-	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
-	outline: none;
-	border: 2px solid ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-
-	&:before {
-		background: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: -1;
-		transition: all 0.6s ease;
-		width: 100%;
-		height: 0%;
-		transform: translate(-50%, -50%) rotate(45deg);
-	}
-
-	&:hover:before {
-		height: 500%;
-	}
-
-	&:hover {
-		color: ${({ inverse }) => (inverse ? 'white' : 'black')};
-	}
-
-	@media (min-width: 350px) and (max-width: 650px){
-		top: 0;
-	}
-	@media (min-width: 650px) and (max-width: 780px){
-		top: 0;
-	}
-	@media (min-width: 780px) and (max-width: 850px){
-		top: 0;
-		margin-top: -30px;
-		left: 300px;
-		margin-bottom: 20px;
-	}
-	@media (min-width: 850px) and (max-width: 950px){
-		top: 0;
-		margin-left: 60%;
-		margin-right: 50%;
-		margin-bottom: 10px;
-	}
-	@media (min-width: 950px) and (max-width: 1050px){
-		top: 250px;
-		margin-left: 60%;
-		margin-right: 50%;
-	}
-	@media (min-width: 1050px) and (max-width: 1250px){
-		margin-left: 70%;
-		margin-right: 50%;
-		bottom: 25px;
-	}
-	@media (min-width: 1250px) and (max-width: 1550px){
-		left: 90%;
-		bottom: 25px;
-	}
-	@media (min-width: 1550px) and (max-width: 1850px){
-		left: 90%;
-		bottom: 25px;
-	}
-`;
 
 const CanalesSubtituloContainer = styled.div`
 	position: relative;

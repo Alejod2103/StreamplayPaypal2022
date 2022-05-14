@@ -111,9 +111,8 @@ const AppContainer = styled.div`
 	height: 130vh;
 	background-color: #071c2f;
 
-	@media (min-width: 300px) and (max-width: 400px) {
-		width: 100%;
-		height: 50vh;
+	@media (min-width: 300px) and (max-width: 450px){
+		height: 150vh;
 	}
 `;
 
@@ -128,15 +127,15 @@ const FlexContainerGlobal = styled.div`
 	flex-wrap: nowrap;
 	flex-direction: row;
 
-	@media (min-width: 300px) and (max-width: 400px) {
+	@media (min-width: 300px) and (max-width: 450px) {
 		display: flex;
-		margin-top: 40px;
-		margin-left: 70px;
+		margin-top: 20px;
+		margin-left: 50px;
 		height: 130px;
 		flex-direction: row;
-		width: 300px;
+		width: 450px;
 		flex-wrap: wrap;
-		max-width: 260px;
+		max-width: 450px;
 		gap: 2px;
 	}
 `;
@@ -156,10 +155,10 @@ const FlexContainerGlobalOne = styled.div`
 	@media (min-width: 300px) and (max-width: 400px) {
 		display: flex;
 		height: 130px;
-		margin-top: 220px;
-		margin-left: 50px;
+		margin-top: 200px;
+		margin-left: 30px;
 		flex-direction: row;
-		width: 300px;
+		width: 350px;
 		flex-wrap: wrap;
 		max-width: 300px;
 		gap: 2px;
@@ -229,9 +228,9 @@ const FlexContainerGlobalFour = styled.div`
 		margin-top: 100px;
 		height: 130px;
 		flex-direction: row;
-		width: 300px;
+		width: 400px;
 		flex-wrap: wrap;
-		max-width: 300px;
+		max-width: 400px;
 		gap: 2px;
 	}
 `;
@@ -249,7 +248,7 @@ const GlobalFlex = styled.div`
 		flex-direction: column;
 		justify-content: space-between;
 		width: 20%;
-		max-width: 200px;
+		max-width: 400px;
 	}
 `;
 
@@ -268,7 +267,7 @@ const ImgHbo = styled.div`
 	background-position: center;
 	background-size: cover;
 	background-image: url(${Hbo});
-	@media (min-width: 300px) and (max-width: 400px) {
+	@media (min-width: 300px) and (max-width: 800px) {
 		width: 100px;
 		height: 80px;
 	}

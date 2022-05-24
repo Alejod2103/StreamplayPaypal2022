@@ -8,10 +8,6 @@ export const data = [
 		to: '/Pricing',
 		text: 'Paquetes',
 	},
-	{
-		text: 'Ver catálogo',
-		link: '/Catalogo'
-	},
 	
 
 ];

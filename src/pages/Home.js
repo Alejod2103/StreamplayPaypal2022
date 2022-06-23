@@ -5,7 +5,7 @@ import Hero from '../components/Hero/Hero';
 import { heroOne, heroTwo, heroThree } from '../data/HeroData';
 import Contenttwo from '../components/Content/Contents/ContentTwo';
 import Compatibles from './Compatibles';
-import Contentthree from '../components/Content/Contents/ContentThree';
+import Contentthree from '../components/Content/Contents/ContentThree.js';
 // Hero Feature Content Carousel
 
 const Home = () => {

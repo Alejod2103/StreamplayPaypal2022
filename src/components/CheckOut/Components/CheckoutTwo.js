@@ -12,14 +12,14 @@ const CheckoutPaypal = () => {
         return (
           <div className="AppCheckout"> 
             <div className="Checkout">
-              <PayPalScriptProvider options={{"client-id": "AQZUd5_-lnPXXo8cNZSZsuiKY2yRVhal8OoDdO_uOafADlUwYPai9TbAde0yARNPd9JqBzmXKNs_EQD8"}} >
+              <PayPalScriptProvider options={{"client-id": "AaNkYTanpppQs88dkajpUd7El_ylCNqjsmTt-JLzZuLYqFl2CFb-rOIWAUtyWBzv_v_9xeHQzFXKKgvo"}} >
                     <PayPalButtons
                     createOrder={(data, actions) => {
                           return actions.order.create({
                               purchase_units: [
                                   {
                                       amount: {
-                                          value: "75.00",
+                                          value: "80.00",
                                       },
                                   },
                               ],
@@ -28,7 +28,7 @@ const CheckoutPaypal = () => {
                       onApprove={(data, actions) => {
                         return actions.order.capture().then((details) => {
                             const name = details.payer.name.given_name;
-                            alert(`Gracias! ${name} tu pago se a procesado`);
+                            alert(`Gracias! ${name} tu pago se a procesado, tu cuenta sera asignada via telefonica!`);
                             console.log(name);
                             
                         });
@@ -44,7 +44,6 @@ const CheckoutPaypal = () => {
 
     <PageCont>
 
-    <ProductImage src={StreamPlay} />
         <CheckoutContainer>
             
 
@@ -54,9 +53,12 @@ const CheckoutPaypal = () => {
 
             <InfoContainer>
                 <PaqueteText>StreamPlay Plan Plus</PaqueteText>
-                <PriceCheckout>75.00$ - 3 meses</PriceCheckout>
+                <PriceCheckout>80.00$ - 3 meses</PriceCheckout>
                 <DescCheckout>3 Meses de acceso ilimitado a todo el contenido de la plataforma</DescCheckout>
             </InfoContainer>
+
+            <ProductImage src={StreamPlay} />
+
         </CheckoutContainer>
     </PageCont>
     </>

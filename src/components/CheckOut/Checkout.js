@@ -12,18 +12,19 @@ const Checkout = () => {
     <>
     <PageCont>
 
-    <ProductImage src={StreamPlay} />
+    
         <CheckoutContainer>
-
             <CheckoutPaypalCont>
                 <PaypalButton className="color:white" />
             </CheckoutPaypalCont>
 
             <InfoContainer>
                 <PaqueteText>StreamPlay Plan Basico</PaqueteText>
-                <PriceCheckout>30.00$ - 1 mes</PriceCheckout>
+                <PriceCheckout>35.00$ - 1 mes</PriceCheckout>
                 <DescCheckout>1 Mes de acceso ilimitado a todo el contenido de la plataforma</DescCheckout>
             </InfoContainer>
+
+            <ProductImage src={StreamPlay} />
         </CheckoutContainer>
     </PageCont>
     </>

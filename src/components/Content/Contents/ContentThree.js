@@ -105,27 +105,48 @@ const Contentthree = () => {
 }
 export default Contentthree;
 
+const GlobalFlex = styled.div`
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	@media (min-width: 300px) and (max-width: 400px) {
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 20%;
+		max-width: 400px;
+	}
+
+	@media (min-width: 400px) and (max-width: 500px) {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	@media (min-width: 500px) and (max-width: 600px) {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 1000px;
+	}
+
+	@media (min-width: 600px) and (max-width: 700px) {
+		
+	}
+`;
+
+
 const AppContainer = styled.div`
 	width: 100%;
-	height: 130vh;
+	position: relative;
+	z-index: 0;
+	height: 100%;
 	background-color: #071c2f;
-
-	@media (min-width: 300px) and (max-width: 450px){
-		height: 180vh;
-	}
-	@media (min-width: 450px) and (max-width: 500px){
-		height: 160vh;
-	}
-	@media (min-width: 500px) and (max-width: 600px){
-		height: 170vh;
-	}
-	@media (min-width: 600px) and (max-width: 750px){
-		height: 180vh;
-	}
-	@media (min-width: 750px) and (max-width: 900px){
-		height: 230vh;		
-	}
-
 `;
 
 const FlexContainerGlobal = styled.div`
@@ -142,7 +163,7 @@ const FlexContainerGlobal = styled.div`
 	@media (min-width: 330px) and (max-width: 350px) {
 		display: flex;
 		margin-top: 20px;
-		margin-left: 12px;
+		margin-left: 16px;
 		height: 130px;
 		flex-direction: row;
 		width: 450px;
@@ -188,7 +209,7 @@ const FlexContainerGlobal = styled.div`
 
 	@media (min-width: 500px) and (max-width: 550px) {
 		display: flex;
-		margin-top: 10px;
+		margin-top: 5px;
 		margin-left: 50px;
 		height: 130px;
 		flex-direction: row;
@@ -196,16 +217,7 @@ const FlexContainerGlobal = styled.div`
 		flex-wrap: wrap;
 		gap: 2px;
 	}
-	@media (min-width: 500px) and (max-width: 550px) {
-		display: flex;
-		margin-top: 34px;
-		margin-left: 50px;
-		height: 130px;
-		flex-direction: row;
-		width: 450px;
-		flex-wrap: wrap;
-		gap: 2px;
-	}
+
 	@media (min-width: 550px) and (max-width: 600px) {
 		display: flex;
 		margin-top: 34px;
@@ -216,6 +228,7 @@ const FlexContainerGlobal = styled.div`
 		flex-wrap: wrap;
 		gap: 2px;
 	}
+
 	@media (min-width: 600px) and (max-width: 650px) {
 		display: flex;
 		margin-top: 34px;
@@ -226,6 +239,7 @@ const FlexContainerGlobal = styled.div`
 		flex-wrap: wrap;
 		gap: 2px;
 	}
+
 	@media (min-width: 650px) and (max-width: 700px) {
 		display: flex;
 		margin-top: 14px;
@@ -236,6 +250,7 @@ const FlexContainerGlobal = styled.div`
 		flex-wrap: wrap;
 		gap: 2px;
 	}
+
 	@media (min-width: 700px) and (max-width: 750px) {
 		display: flex; 
 		margin-top: 14px;
@@ -246,6 +261,7 @@ const FlexContainerGlobal = styled.div`
 		flex-wrap: wrap;
 		gap: 2px;
 	}
+	
 	@media (min-width: 750px) and (max-width: 800px) {
 		display: flex; 
 		margin-top: 2px;
@@ -650,6 +666,7 @@ const FlexContainerGlobalFour = styled.div`
 		height: 130px;
 		flex-direction: row;
 		width: 450px;
+		margin-bottom: 70px;
 		flex-wrap: wrap;
 		max-width: 350px;
 		gap: 2px;
@@ -659,12 +676,14 @@ const FlexContainerGlobalFour = styled.div`
 		margin-top: 35px;
 		margin-left: 75px;
 		height: 130px;
+		margin-bottom: 70px;
 		flex-direction: row;
 		width: 450px;
 		flex-wrap: wrap;
 		max-width: 350px;
 		gap: 2px;
 	}
+
 	@media (min-width: 500px) and (max-width: 550px) {
 		display: flex;
 		margin-top: 34px;
@@ -685,6 +704,7 @@ const FlexContainerGlobalFour = styled.div`
 		flex-wrap: wrap;
 		gap: 2px;
 	}
+
 	@media (min-width: 600px) and (max-width: 650px) {
 		display: flex;
 		margin-top: 34px;
@@ -726,32 +746,6 @@ const FlexContainerGlobalFour = styled.div`
 		gap: 2px;
 	}
 `;
-
-
-
-const GlobalFlex = styled.div`
-	height: 130px;
-	width: 100%;
-	position: relative;
-
-	@media (min-width: 300px) and (max-width: 400px) {
-		height: 200px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 20%;
-		max-width: 400px;
-	}
-
-	@media (min-width: 400px) and (max-width: 500px) {
-		display: flex;
-		position: relative;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 100%;
-	}
-`;
-
 
 
 //Styles Logo canales

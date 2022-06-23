@@ -6,14 +6,14 @@ function PaypalButton() {
   return (
     <div className="AppCheckout"> 
       <div className="Checkout">
-        <PayPalScriptProvider options={{"client-id": "AQZUd5_-lnPXXo8cNZSZsuiKY2yRVhal8OoDdO_uOafADlUwYPai9TbAde0yARNPd9JqBzmXKNs_EQD8"}} >
+        <PayPalScriptProvider options={{"client-id": "AaNkYTanpppQs88dkajpUd7El_ylCNqjsmTt-JLzZuLYqFl2CFb-rOIWAUtyWBzv_v_9xeHQzFXKKgvo"}} >
               <PayPalButtons
               createOrder={(data, actions) => {
                     return actions.order.create({
                         purchase_units: [
                             {
                                 amount: {
-                                    value: "30.00",
+                                    value: "35.00",
                                 },
                             },
                         ],
@@ -22,7 +22,7 @@ function PaypalButton() {
                 onApprove={(data, actions) => {
                   return actions.order.capture().then((details) => {
                       const name = details.payer.name.given_name;
-                      alert(`Felicidades ${name} tu pago se a procesado`);
+                      alert(`Felicidades ${name} tu pago se a procesado, tu cuenta sera asignada via telefonica!`);
                       console.log(name);
                       
                   });
